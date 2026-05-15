@@ -1,0 +1,45 @@
+name: Refresh portfolio snapshot
+
+# Re-runs the gh-api scrape every 6 hours so the deployed dashboard
+# reflects new pushes (Codex, Claude, manual commits) without anyone
+# editing data files. Commits the new repos.json on change.
+
+on:
+  schedule:
+    # Every 6 hours at minute 7 (off-the-hour to spread load).
+    - cron: "7 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: refresh src/data/repos.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run refresh script
+        env:
+          # gh CLI uses GITHUB_TOKEN automatically.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/refresh-snapshot.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- src/data/repos.json; then
+            echo "no snapshot changes"
+          else
+            git add src/data/repos.json
+            git commit -m "chore(snapshot): refresh from gh api"
+            git push
+          fi

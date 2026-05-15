@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-constellation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live portfolio constellation map for mizcausevic-dev — auto-refreshing snapshot of every public repo, classified into the Kinetic Gain Suite, AEO Reference Stack, Agent Operations Suite, Platform Reliability Stack, and Decision Intelligence portfolios. Deploys to portfolio.kineticgain.com.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0",
+    "test": "vitest run",
+    "refresh": "node scripts/refresh-snapshot.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.8.1",
+    "lucide-react": "^1.16.0",
+    "motion": "^12.38.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.0.0",
+    "happy-dom": "^15.0.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.0"
+  }
+}
