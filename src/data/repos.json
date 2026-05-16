@@ -1,8 +1,86 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-16T06:59:07.011Z",
-  "total": 196,
+  "generated_at": "2026-05-16T12:34:51.357Z",
+  "total": 198,
   "repos": [
+    {
+      "name": "sveska",
+      "description": "Sveska — a studio-grade, local-first, offline-first notepad PWA. Notes, Markdown, canvas, AI — all local. sveska.studio",
+      "url": "https://github.com/mizcausevic-dev/sveska",
+      "language": "TypeScript",
+      "topics": [
+        "dexie",
+        "indexeddb",
+        "local-first",
+        "markdown",
+        "notepad",
+        "offline-first",
+        "pwa",
+        "react",
+        "typescript",
+        "vite",
+        "workbox",
+        "zustand"
+      ],
+      "pushed_at": "2026-05-16T09:26:31Z",
+      "updated_at": "2026-05-16T09:26:36Z",
+      "created_at": "2026-05-16T09:26:16Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://sveska.studio",
+      "license": "MIT"
+    },
+    {
+      "name": "procurement-pulse-landing",
+      "description": "AI Procurement Pulse — a quarterly research publication measuring vendor AI governance disclosure. Issue #0 (methodology) live at pulse.kineticgain.com; Issue #1 with real crawl data ships Q3 2026.",
+      "url": "https://github.com/mizcausevic-dev/procurement-pulse-landing",
+      "language": "HTML",
+      "topics": [
+        "ai-disclosure",
+        "ai-governance",
+        "decision-intelligence",
+        "kinetic-gain-protocol-suite",
+        "landing-page",
+        "procurement",
+        "quarterly-report",
+        "research-publication",
+        "well-known"
+      ],
+      "pushed_at": "2026-05-16T07:17:04Z",
+      "updated_at": "2026-05-16T07:17:07Z",
+      "created_at": "2026-05-16T07:17:02Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://pulse.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-16T06:59:07Z",
+      "updated_at": "2026-05-16T06:59:11Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "audit-stream-py",
       "description": "Append-only governance event stream for the Kinetic Gain portfolio. Hash-chained for tamper-evidence, SSE for live tailing, REST for queries. Every portfolio repo is a producer.",
@@ -176,29 +254,6 @@
       "fork": false,
       "homepage": "https://growth.kineticgain.com/",
       "license": "MIT"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-05-16T01:04:51Z",
-      "updated_at": "2026-05-16T03:53:21Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "camunda-connector-test-harness",
