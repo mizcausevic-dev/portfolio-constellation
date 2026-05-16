@@ -1,8 +1,135 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-15T21:32:10.047Z",
-  "total": 191,
+  "generated_at": "2026-05-16T01:04:50.353Z",
+  "total": 194,
   "repos": [
+    {
+      "name": "camunda-connector-test-harness",
+      "description": "TypeScript harness for contract-testing Camunda outbound connectors with secret replacement, retry simulation, and failure review.",
+      "url": "https://github.com/mizcausevic-dev/camunda-connector-test-harness",
+      "language": "TypeScript",
+      "topics": [
+        "camunda",
+        "connector-testing",
+        "contract-testing",
+        "enterprise-integration",
+        "kinetic-gain",
+        "nodejs",
+        "retry-simulation",
+        "secret-management",
+        "typescript",
+        "workflow-automation"
+      ],
+      "pushed_at": "2026-05-16T00:41:24Z",
+      "updated_at": "2026-05-16T00:41:27Z",
+      "created_at": "2026-05-15T23:10:53Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "customer-intelligence-graph",
+      "description": "React + TypeScript flagship that maps customer, lifecycle, revenue, experimentation, and trust signals into one graph-first decision surface.",
+      "url": "https://github.com/mizcausevic-dev/customer-intelligence-graph",
+      "language": "TypeScript",
+      "topics": [
+        "customer-intelligence",
+        "frontend",
+        "react",
+        "revenue-operations",
+        "vite"
+      ],
+      "pushed_at": "2026-05-15T23:37:46Z",
+      "updated_at": "2026-05-12T21:39:18Z",
+      "created_at": "2026-05-08T15:44:46Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": "MIT"
+    },
+    {
+      "name": "ukg-to-scim-provisioner",
+      "description": "C# ASP.NET Core bridge for mapping UKG workforce lifecycle events into SCIM create, patch, deactivate, and reconciliation-safe identity actions.",
+      "url": "https://github.com/mizcausevic-dev/ukg-to-scim-provisioner",
+      "language": "C#",
+      "topics": [
+        "aspnet-core",
+        "csharp",
+        "dotnet",
+        "hris",
+        "identity-governance",
+        "kinetic-gain",
+        "provisioning",
+        "scim",
+        "ukg",
+        "workforce-automation"
+      ],
+      "pushed_at": "2026-05-15T22:02:51Z",
+      "updated_at": "2026-05-15T22:02:51Z",
+      "created_at": "2026-05-15T22:02:35Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [],
+      "pushed_at": "2026-05-15T22:00:10Z",
+      "updated_at": "2026-05-15T22:00:15Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": null,
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-05-15T21:58:20Z",
+      "updated_at": "2026-05-15T21:58:23Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "kinetic-gain-suite-landing",
+      "description": "Canonical front-door landing for the Kinetic Gain Protocol Suite. 10 open governance specs across 2 regulated verticals. Deploys to suite.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/kinetic-gain-suite-landing",
+      "language": "HTML",
+      "topics": [],
+      "pushed_at": "2026-05-15T21:58:05Z",
+      "updated_at": "2026-05-15T21:58:08Z",
+      "created_at": "2026-05-12T21:02:04Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": null,
+      "license": "NOASSERTION"
+    },
     {
       "name": "ibm-custom-connector-starter",
       "description": "Java starter template for IBM App Connect custom connectors with descriptor, factory, packaging, and readiness guidance.",
@@ -353,22 +480,6 @@
       "license": "MIT"
     },
     {
-      "name": "kinetic-gain-suite-landing",
-      "description": "Canonical front-door landing for the Kinetic Gain Protocol Suite. 10 open governance specs across 2 regulated verticals. Deploys to suite.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/kinetic-gain-suite-landing",
-      "language": "HTML",
-      "topics": [],
-      "pushed_at": "2026-05-15T19:13:41Z",
-      "updated_at": "2026-05-15T19:13:45Z",
-      "created_at": "2026-05-12T21:02:04Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": null,
-      "license": "NOASSERTION"
-    },
-    {
       "name": "kinetic-gain-protocol-suite",
       "description": "Kinetic Gain Protocol Suite — eight open JSON specs for the answer-engine and agent era. Five core (AEO, Prompt Provenance, Agent Cards, AI Evidence, MCP Tool Cards) plus the EdTech trio (Tutor Cards, Student AI Disclosure, Classroom AI AUP). One MCP server, one visualizer, three live properties.",
       "url": "https://github.com/mizcausevic-dev/kinetic-gain-protocol-suite",
@@ -394,25 +505,6 @@
       "fork": false,
       "homepage": "https://mizcausevic-dev.github.io/kinetic-gain-visualizer/",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-05-15T19:13:13Z",
-      "updated_at": "2026-05-15T19:13:17Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
     },
     {
       "name": "incident-correlation-rs",
@@ -3988,28 +4080,6 @@
       "fork": false,
       "homepage": "https://mizcausevic.com/skills/",
       "license": null
-    },
-    {
-      "name": "customer-intelligence-graph",
-      "description": "React + TypeScript flagship that maps customer, lifecycle, revenue, experimentation, and trust signals into one graph-first decision surface.",
-      "url": "https://github.com/mizcausevic-dev/customer-intelligence-graph",
-      "language": "TypeScript",
-      "topics": [
-        "customer-intelligence",
-        "frontend",
-        "react",
-        "revenue-operations",
-        "vite"
-      ],
-      "pushed_at": "2026-05-12T21:39:15Z",
-      "updated_at": "2026-05-12T21:39:18Z",
-      "created_at": "2026-05-08T15:44:46Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://kineticgain.com/",
-      "license": "MIT"
     },
     {
       "name": "curriculum-knowledge-graph",
