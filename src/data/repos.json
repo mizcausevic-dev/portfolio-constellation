@@ -1,29 +1,36 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-17T07:12:10.810Z",
-  "total": 208,
+  "generated_at": "2026-05-17T12:33:55.732Z",
+  "total": 209,
   "repos": [
     {
       "name": "sveska",
-      "description": "Sveska — a studio-grade, local-first, offline-first notepad PWA. Notes, Markdown, canvas, AI — all local. sveska.studio",
+      "description": "Studio-grade, local-first notepad PWA. Multi-note tabs, Markdown + checklist modes, command palette, fuzzy search, streaming AI, OG-card image export. Live at sveska.studio",
       "url": "https://github.com/mizcausevic-dev/sveska",
       "language": "TypeScript",
       "topics": [
+        "ai",
+        "anthropic",
+        "checklist",
+        "command-palette",
         "dexie",
+        "find-replace",
         "indexeddb",
         "local-first",
         "markdown",
+        "netlify-edge-functions",
         "notepad",
         "offline-first",
         "pwa",
         "react",
+        "slash-commands",
+        "streaming",
         "typescript",
         "vite",
-        "workbox",
         "zustand"
       ],
-      "pushed_at": "2026-05-17T07:11:25Z",
-      "updated_at": "2026-05-17T07:11:29Z",
+      "pushed_at": "2026-05-17T08:23:18Z",
+      "updated_at": "2026-05-17T08:23:06Z",
       "created_at": "2026-05-16T09:26:16Z",
       "stars": 0,
       "forks": 0,
@@ -31,6 +38,89 @@
       "fork": false,
       "homepage": "https://sveska.studio",
       "license": "MIT"
+    },
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-05-17T07:50:18Z",
+      "updated_at": "2026-05-17T07:50:21Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "mizcausevic-dev.github.io",
+      "description": "Career one-pager. Director of Web Engineering, Platform Architecture, B2B SaaS Technologist.",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev.github.io",
+      "language": "HTML",
+      "topics": [],
+      "pushed_at": "2026-05-17T07:50:18Z",
+      "updated_at": "2026-05-17T07:50:22Z",
+      "created_at": "2026-05-09T19:08:31Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": null,
+      "license": null
+    },
+    {
+      "name": "revops-lead-router",
+      "description": "Lead enrichment, CRM routing, speed-to-lead posture, and queue integrity control plane for RevOps and GTM systems.",
+      "url": "https://github.com/mizcausevic-dev/revops-lead-router",
+      "language": "TypeScript",
+      "topics": [
+        "crm-routing",
+        "express",
+        "growth-ops",
+        "gtm-systems",
+        "lead-routing",
+        "revenue-operations",
+        "revops",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-17T07:49:39Z",
+      "updated_at": "2026-05-17T07:49:38Z",
+      "created_at": "2026-05-17T07:49:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-17T07:12:11Z",
+      "updated_at": "2026-05-17T07:12:15Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
     },
     {
       "name": "headless-editorial-command-center",
@@ -1991,29 +2081,6 @@
       "license": null
     },
     {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-05-17T01:13:53Z",
-      "updated_at": "2026-05-17T01:13:56Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
-    },
-    {
       "name": "procurement-pulse-landing",
       "description": "AI Procurement Pulse — a quarterly research publication measuring vendor AI governance disclosure. Issue #0 (methodology) live at pulse.kineticgain.com; Issue #1 with real crawl data ships Q3 2026.",
       "url": "https://github.com/mizcausevic-dev/procurement-pulse-landing",
@@ -2141,25 +2208,6 @@
       "fork": false,
       "homepage": "https://decisions.kineticgain.com/",
       "license": "NOASSERTION"
-    },
-    {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-05-15T21:58:20Z",
-      "updated_at": "2026-05-15T21:58:23Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
     },
     {
       "name": "kinetic-gain-suite-landing",
@@ -4239,22 +4287,6 @@
       "fork": false,
       "homepage": "https://github.com/mizcausevic-dev/miz-otel-pack",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "mizcausevic-dev.github.io",
-      "description": "Career one-pager. Director of Web Engineering, Platform Architecture, B2B SaaS Technologist.",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev.github.io",
-      "language": "HTML",
-      "topics": [],
-      "pushed_at": "2026-05-12T21:40:55Z",
-      "updated_at": "2026-05-12T21:40:59Z",
-      "created_at": "2026-05-09T19:08:31Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": null,
-      "license": null
     },
     {
       "name": "mcp-sentinel-dashboard",
