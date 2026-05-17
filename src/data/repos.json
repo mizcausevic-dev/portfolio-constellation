@@ -1,8 +1,33 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-16T18:30:16.120Z",
-  "total": 198,
+  "generated_at": "2026-05-17T01:13:52.665Z",
+  "total": 200,
   "repos": [
+    {
+      "name": "llms-txt-governance-hub",
+      "description": "TypeScript governance control plane for managing llms.txt manifests, exclusions, freshness windows, and answer-surface release posture.",
+      "url": "https://github.com/mizcausevic-dev/llms-txt-governance-hub",
+      "language": "TypeScript",
+      "topics": [
+        "aeo",
+        "answer-engine-optimization",
+        "content-governance",
+        "express",
+        "generative-engine-optimization",
+        "llms-txt",
+        "seo",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-17T01:12:50Z",
+      "updated_at": "2026-05-17T01:12:48Z",
+      "created_at": "2026-05-17T01:12:29Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
     {
       "name": "sveska",
       "description": "Sveska — a studio-grade, local-first, offline-first notepad PWA. Notes, Markdown, canvas, AI — all local. sveska.studio",
@@ -22,8 +47,8 @@
         "workbox",
         "zustand"
       ],
-      "pushed_at": "2026-05-16T17:24:43Z",
-      "updated_at": "2026-05-16T17:24:47Z",
+      "pushed_at": "2026-05-17T00:53:22Z",
+      "updated_at": "2026-05-17T00:53:26Z",
       "created_at": "2026-05-16T09:26:16Z",
       "stars": 0,
       "forks": 0,
@@ -31,6 +56,31 @@
       "fork": false,
       "homepage": "https://sveska.studio",
       "license": "MIT"
+    },
+    {
+      "name": "aeo-citation-gap-finder",
+      "description": "TypeScript AEO control plane for finding unsupported, stale, or weakly sourced claims before they reach answer-engine surfaces.",
+      "url": "https://github.com/mizcausevic-dev/aeo-citation-gap-finder",
+      "language": "TypeScript",
+      "topics": [
+        "aeo",
+        "answer-engine-optimization",
+        "citation-governance",
+        "content-governance",
+        "express",
+        "generative-engine-optimization",
+        "seo",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-17T00:32:26Z",
+      "updated_at": "2026-05-17T00:32:24Z",
+      "created_at": "2026-05-17T00:32:07Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
     },
     {
       "name": "portfolio-constellation",
@@ -45,8 +95,8 @@
         "recharts",
         "typescript"
       ],
-      "pushed_at": "2026-05-16T12:34:52Z",
-      "updated_at": "2026-05-16T12:34:55Z",
+      "pushed_at": "2026-05-16T18:30:16Z",
+      "updated_at": "2026-05-16T18:30:20Z",
       "created_at": "2026-05-15T21:46:21Z",
       "stars": 0,
       "forks": 0,
