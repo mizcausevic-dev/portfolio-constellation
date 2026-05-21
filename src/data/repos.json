@@ -1,8 +1,105 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-21T13:24:50.135Z",
-  "total": 220,
+  "generated_at": "2026-05-21T18:49:32.974Z",
+  "total": 222,
   "repos": [
+    {
+      "name": "procurement-pulse-engine",
+      "description": "The crawl + aggregate engine behind the AI Procurement Pulse. Probes a universe of vendor domains for the 11 Kinetic Gain Protocol Suite documents and produces the quarterly issue dataset. Issue #1: the zero baseline.",
+      "url": "https://github.com/mizcausevic-dev/procurement-pulse-engine",
+      "language": "JavaScript",
+      "topics": [
+        "ai-governance",
+        "ai-procurement-pulse",
+        "crawler",
+        "data-journalism",
+        "javascript",
+        "kinetic-gain-protocol-suite",
+        "procurement",
+        "research",
+        "well-known"
+      ],
+      "pushed_at": "2026-05-21T17:53:55Z",
+      "updated_at": "2026-05-21T17:54:00Z",
+      "created_at": "2026-05-21T17:53:52Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://pulse.kineticgain.com/",
+      "license": "MIT"
+    },
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-05-21T17:32:53Z",
+      "updated_at": "2026-05-21T17:32:57Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "kineticgain-vendor-inspector",
+      "description": "Browser extension (MV3) + Greasemonkey userscript that score what AI governance documents any vendor publishes at /.well-known/ — the 11 Kinetic Gain Protocol Suite specs, 0-100. One shared probe core, two distribution surfaces.",
+      "url": "https://github.com/mizcausevic-dev/kineticgain-vendor-inspector",
+      "language": "JavaScript",
+      "topics": [
+        "ai-governance",
+        "browser-extension",
+        "chrome-extension",
+        "firefox-addon",
+        "greasemonkey",
+        "javascript",
+        "kinetic-gain-protocol-suite",
+        "manifest-v3",
+        "tampermonkey",
+        "userscript",
+        "vendor-disclosure",
+        "well-known"
+      ],
+      "pushed_at": "2026-05-21T17:28:41Z",
+      "updated_at": "2026-05-21T17:28:45Z",
+      "created_at": "2026-05-21T17:28:37Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://suite.kineticgain.com/",
+      "license": "MIT"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-21T13:24:51Z",
+      "updated_at": "2026-05-21T13:25:27Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "Identity-Access-Audit-API",
       "description": "TypeScript platform for identity governance, privileged access review, audit visibility, and remediation-aware IAM workflows.",
@@ -27,29 +124,6 @@
       "fork": false,
       "homepage": "https://mizcausevic.com/skills/",
       "license": null
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-05-21T07:34:34Z",
-      "updated_at": "2026-05-21T07:34:39Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "conversion-funnel-intelligence-hub",
@@ -311,25 +385,6 @@
       "fork": false,
       "homepage": "https://kineticgain.com/",
       "license": "MIT"
-    },
-    {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-05-20T01:46:22Z",
-      "updated_at": "2026-05-20T01:46:25Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
     },
     {
       "name": "well-known-probe-js",
