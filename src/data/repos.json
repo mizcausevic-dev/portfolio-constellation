@@ -1,8 +1,32 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-22T13:08:54.033Z",
+  "generated_at": "2026-05-22T18:48:28.947Z",
   "total": 222,
   "repos": [
+    {
+      "name": "executive-briefing-studio",
+      "description": "React + TypeScript flagship for translating revenue, growth, risk, AI, and operational signals into premium executive briefings.",
+      "url": "https://github.com/mizcausevic-dev/executive-briefing-studio",
+      "language": "TypeScript",
+      "topics": [
+        "decision-intelligence",
+        "executive-tools",
+        "frontend",
+        "operator-surface",
+        "react",
+        "typescript",
+        "vite"
+      ],
+      "pushed_at": "2026-05-22T16:38:32Z",
+      "updated_at": "2026-05-17T05:17:10Z",
+      "created_at": "2026-05-08T16:52:01Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://briefing.kineticgain.com/",
+      "license": "MIT"
+    },
     {
       "name": "portfolio-constellation",
       "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
@@ -16,8 +40,8 @@
         "recharts",
         "typescript"
       ],
-      "pushed_at": "2026-05-22T07:30:54Z",
-      "updated_at": "2026-05-22T07:30:58Z",
+      "pushed_at": "2026-05-22T13:08:54Z",
+      "updated_at": "2026-05-22T13:08:59Z",
       "created_at": "2026-05-15T21:46:21Z",
       "stars": 0,
       "forks": 0,
@@ -890,30 +914,6 @@
       "license": "MIT"
     },
     {
-      "name": "executive-briefing-studio",
-      "description": "React + TypeScript flagship for translating revenue, growth, risk, AI, and operational signals into premium executive briefings.",
-      "url": "https://github.com/mizcausevic-dev/executive-briefing-studio",
-      "language": "TypeScript",
-      "topics": [
-        "decision-intelligence",
-        "executive-tools",
-        "frontend",
-        "operator-surface",
-        "react",
-        "typescript",
-        "vite"
-      ],
-      "pushed_at": "2026-05-17T05:21:18Z",
-      "updated_at": "2026-05-17T05:17:10Z",
-      "created_at": "2026-05-08T16:52:01Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://briefing.kineticgain.com/",
-      "license": "MIT"
-    },
-    {
       "name": "compliance-event-ledger",
       "description": "Java Spring Boot backend for immutable compliance event history, timeline retrieval, exception pressure scoring, and audit-friendly governance workflows",
       "url": "https://github.com/mizcausevic-dev/compliance-event-ledger",
@@ -1338,9 +1338,9 @@
         "technical-seo"
       ],
       "pushed_at": "2026-05-17T05:15:37Z",
-      "updated_at": "2026-05-17T05:15:38Z",
+      "updated_at": "2026-05-22T16:16:14Z",
       "created_at": "2026-05-12T16:03:17Z",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "archived": false,
       "fork": false,
