@@ -1,8 +1,56 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-22T18:48:28.947Z",
+  "generated_at": "2026-05-23T01:10:51.799Z",
   "total": 222,
   "repos": [
+    {
+      "name": "growth-systems-control-room",
+      "description": "React + TypeScript flagship control room that unifies revenue, growth, AI operations, workflow execution, and governance visibility.",
+      "url": "https://github.com/mizcausevic-dev/growth-systems-control-room",
+      "language": "TypeScript",
+      "topics": [
+        "ai-operations",
+        "control-plane",
+        "frontend",
+        "growth-systems",
+        "react",
+        "revenue-operations",
+        "typescript",
+        "vite"
+      ],
+      "pushed_at": "2026-05-22T20:11:14Z",
+      "updated_at": "2026-05-17T05:13:10Z",
+      "created_at": "2026-05-08T14:27:23Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://growth.kineticgain.com/",
+      "license": "MIT"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-22T18:48:30Z",
+      "updated_at": "2026-05-22T18:48:34Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "executive-briefing-studio",
       "description": "React + TypeScript flagship for translating revenue, growth, risk, AI, and operational signals into premium executive briefings.",
@@ -26,29 +74,6 @@
       "fork": false,
       "homepage": "https://briefing.kineticgain.com/",
       "license": "MIT"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-05-22T13:08:54Z",
-      "updated_at": "2026-05-22T13:08:59Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "procurement-pulse-engine",
@@ -1934,31 +1959,6 @@
       "fork": false,
       "homepage": "https://kineticgain.com/",
       "license": null
-    },
-    {
-      "name": "growth-systems-control-room",
-      "description": "React + TypeScript flagship control room that unifies revenue, growth, AI operations, workflow execution, and governance visibility.",
-      "url": "https://github.com/mizcausevic-dev/growth-systems-control-room",
-      "language": "TypeScript",
-      "topics": [
-        "ai-operations",
-        "control-plane",
-        "frontend",
-        "growth-systems",
-        "react",
-        "revenue-operations",
-        "typescript",
-        "vite"
-      ],
-      "pushed_at": "2026-05-17T05:13:08Z",
-      "updated_at": "2026-05-17T05:13:10Z",
-      "created_at": "2026-05-08T14:27:23Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://growth.kineticgain.com/",
-      "license": "MIT"
     },
     {
       "name": "geo-competitive-visibility-tracker",
