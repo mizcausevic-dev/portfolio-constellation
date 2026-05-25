@@ -1,8 +1,87 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-25T01:17:42.828Z",
+  "generated_at": "2026-05-25T02:55:46.322Z",
   "total": 238,
   "repos": [
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-05-25T02:52:43Z",
+      "updated_at": "2026-05-25T02:52:46Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "sveska",
+      "description": "Studio-grade, local-first notepad PWA. CodeMirror rich editor with inline screenshot paste, Markdown/checklist/canvas modes, slash commands, streaming AI, glossary engine, pricing scaffold. 281 tests, accessibility-audited. Live at sveska.studio",
+      "url": "https://github.com/mizcausevic-dev/sveska",
+      "language": "TypeScript",
+      "topics": [
+        "accessibility",
+        "anthropic",
+        "canvas",
+        "codemirror",
+        "dexie",
+        "error-boundary",
+        "excalidraw",
+        "glossary",
+        "indexeddb",
+        "local-first",
+        "markdown",
+        "notepad",
+        "offline-first",
+        "playwright",
+        "pwa",
+        "react",
+        "slash-commands",
+        "typescript",
+        "vite",
+        "zustand"
+      ],
+      "pushed_at": "2026-05-25T02:46:22Z",
+      "updated_at": "2026-05-25T02:46:14Z",
+      "created_at": "2026-05-16T09:26:16Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://sveska.studio",
+      "license": "MIT"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-25T01:17:43Z",
+      "updated_at": "2026-05-25T01:17:47Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "procurement-pulse-landing",
       "description": "AI Procurement Pulse — a quarterly research publication measuring vendor AI governance disclosure. Issue #0 (methodology) live at pulse.kineticgain.com; Issue #1 with real crawl data ships Q3 2026.",
@@ -329,25 +408,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-05-24T22:49:59Z",
-      "updated_at": "2026-05-24T22:50:02Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
-    },
-    {
       "name": "kinetic-gain-protocol-suite",
       "description": "Kinetic Gain Protocol Suite — eight open JSON specs for the answer-engine and agent era. Five core (AEO, Prompt Provenance, Agent Cards, AI Evidence, MCP Tool Cards) plus the EdTech trio (Tutor Cards, Student AI Disclosure, Classroom AI AUP). One MCP server, one visualizer, three live properties.",
       "url": "https://github.com/mizcausevic-dev/kinetic-gain-protocol-suite",
@@ -633,29 +693,6 @@
       "fork": false,
       "homepage": "https://kineticgain.com/",
       "license": null
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-05-24T18:33:42Z",
-      "updated_at": "2026-05-24T18:33:46Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "approval-workflow-orchestrator",
@@ -1694,42 +1731,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://suite.kineticgain.com/",
-      "license": "MIT"
-    },
-    {
-      "name": "sveska",
-      "description": "Studio-grade, local-first notepad PWA. Multi-note tabs, Markdown/checklist/canvas modes, streaming AI, glossary engine, pricing scaffold, accessibility-audited. 260 tests, 178 KB gzip. Live at sveska.studio",
-      "url": "https://github.com/mizcausevic-dev/sveska",
-      "language": "TypeScript",
-      "topics": [
-        "accessibility",
-        "anthropic",
-        "canvas",
-        "dexie",
-        "error-boundary",
-        "excalidraw",
-        "glossary",
-        "indexeddb",
-        "local-first",
-        "markdown",
-        "notepad",
-        "offline-first",
-        "playwright",
-        "pwa",
-        "react",
-        "slash-commands",
-        "typescript",
-        "vite",
-        "zustand"
-      ],
-      "pushed_at": "2026-05-20T01:03:16Z",
-      "updated_at": "2026-05-20T01:03:19Z",
-      "created_at": "2026-05-16T09:26:16Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://sveska.studio",
       "license": "MIT"
     },
     {
