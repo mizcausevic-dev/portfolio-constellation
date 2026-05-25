@@ -1,8 +1,100 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-05-25T13:25:17.035Z",
-  "total": 238,
+  "generated_at": "2026-05-25T18:45:38.391Z",
+  "total": 242,
   "repos": [
+    {
+      "name": "regulatory-comment-intelligence-hub",
+      "description": "TypeScript control plane for regulatory comment intake, obligation mapping, approval posture, and evidence-packaged submission workflows.",
+      "url": "https://github.com/mizcausevic-dev/regulatory-comment-intelligence-hub",
+      "language": "TypeScript",
+      "topics": [
+        "compliance",
+        "govtech",
+        "operator-tooling",
+        "policy-automation",
+        "regtech",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-25T18:36:46Z",
+      "updated_at": "2026-05-25T18:36:49Z",
+      "created_at": "2026-05-25T17:01:18Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "patient-consent-audit-stream",
+      "description": "Digital Health operator surface for consent state, audit streams, and revocation-safe escalation.",
+      "url": "https://github.com/mizcausevic-dev/patient-consent-audit-stream",
+      "language": "TypeScript",
+      "topics": [
+        "audit-trail",
+        "consent-management",
+        "digital-health",
+        "medtech",
+        "privacy-operations",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-25T18:14:44Z",
+      "updated_at": "2026-05-25T18:14:45Z",
+      "created_at": "2026-05-25T18:14:37Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "prior-authorization-evidence-router",
+      "description": "Digital Health operator surface for prior-authorization evidence routing, payer rules, and approval-safe escalation.",
+      "url": "https://github.com/mizcausevic-dev/prior-authorization-evidence-router",
+      "language": "TypeScript",
+      "topics": [
+        "digital-health",
+        "healthcare-operations",
+        "medtech",
+        "prior-authorization",
+        "revenue-cycle",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-25T18:06:04Z",
+      "updated_at": "2026-05-25T18:06:05Z",
+      "created_at": "2026-05-25T18:05:31Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "contract-clause-obligation-graph",
+      "description": "LegalTech operator surface for clause extraction, obligation graphs, review blockers, and renewal-safe execution.",
+      "url": "https://github.com/mizcausevic-dev/contract-clause-obligation-graph",
+      "language": "TypeScript",
+      "topics": [
+        "compliance",
+        "contract-analytics",
+        "governance",
+        "legaltech",
+        "obligation-management",
+        "typescript"
+      ],
+      "pushed_at": "2026-05-25T17:54:20Z",
+      "updated_at": "2026-05-25T17:53:56Z",
+      "created_at": "2026-05-25T17:52:14Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": null
+    },
     {
       "name": "portfolio-constellation",
       "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
@@ -16,8 +108,8 @@
         "recharts",
         "typescript"
       ],
-      "pushed_at": "2026-05-25T07:53:35Z",
-      "updated_at": "2026-05-25T07:53:40Z",
+      "pushed_at": "2026-05-25T13:25:18Z",
+      "updated_at": "2026-05-25T13:25:21Z",
       "created_at": "2026-05-15T21:46:21Z",
       "stars": 0,
       "forks": 0,
