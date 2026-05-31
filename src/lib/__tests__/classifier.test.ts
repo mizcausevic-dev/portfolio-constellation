@@ -47,6 +47,29 @@ describe("clustersFor", () => {
     expect(clustersFor(repo({ name: "procurement-decision-api" }))).toContain("decision-intelligence");
   });
 
+  it("classifies Pulse engine into industry-telemetry", () => {
+    expect(clustersFor(repo({ name: "procurement-pulse-engine" }))).toContain("industry-telemetry");
+  });
+
+  it("cross-lists ai-procurement-decision-spec into kg-suite + industry-telemetry", () => {
+    const out = clustersFor(repo({ name: "ai-procurement-decision-spec" }));
+    expect(out).toContain("kg-suite");
+    expect(out).toContain("industry-telemetry");
+  });
+
+  it("classifies clinical operator surfaces into healthtech-stack", () => {
+    expect(clustersFor(repo({ name: "gxp-change-control-board" }))).toContain("healthtech-stack");
+    expect(clustersFor(repo({ name: "fda-samd-classification-board" }))).toContain("healthtech-stack");
+    expect(clustersFor(repo({ name: "patient-consent-audit-stream" }))).toContain("healthtech-stack");
+  });
+
+  it("classifies Klaviyo / VWO / attribution repos into growth-ops", () => {
+    expect(clustersFor(repo({ name: "klaviyo-flow-consent-audit" }))).toContain("growth-ops");
+    expect(clustersFor(repo({ name: "vwo-experiment-governance-mirror" }))).toContain("growth-ops");
+    expect(clustersFor(repo({ name: "kg-utm-attribution" }))).toContain("growth-ops");
+    expect(clustersFor(repo({ name: "growth-systems-control-room" }))).toContain("growth-ops");
+  });
+
   it("falls back to mcp-family for unknown mcp-prefixed repos by topic", () => {
     const r = repo({ name: "mcp-some-new-thing", topics: ["mcp"] });
     expect(clustersFor(r)).toContain("mcp-family");

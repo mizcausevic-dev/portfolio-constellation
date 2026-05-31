@@ -34,6 +34,9 @@ export type Cluster =
   | "agent-ops"
   | "platform-reliability"
   | "decision-intelligence"
+  | "industry-telemetry"
+  | "healthtech-stack"
+  | "growth-ops"
   | "mcp-family"
   | "landing"
   | "frontend-showcase";
@@ -113,6 +116,27 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Buyer-side governance: Decision Cards → PolicyBundles → live request enforcement → contract ownership → incident remediation graphs.",
     accent: "#f472b6",
+  },
+  "industry-telemetry": {
+    id: "industry-telemetry",
+    label: "AI Procurement Pulse",
+    blurb:
+      "Industry telemetry — a quarterly, ed25519-signed measurement product. Crawls a 1,400+ domain universe across 38 verticals to score AI-procurement disclosure depth and publishes the deltas as public Issues.",
+    accent: "#14b8a6",
+  },
+  "healthtech-stack": {
+    id: "healthtech-stack",
+    label: "HealthTech / Clinical Stack",
+    blurb:
+      "Clinical + GxP-territory depth: FDA SaMD, HIPAA-readiness, FHIR access audits, CAPA + batch deviation, specimen chain-of-custody, trial-protocol drift, and adverse-event incident cards.",
+    accent: "#84cc16",
+  },
+  "growth-ops": {
+    id: "growth-ops",
+    label: "Growth & Consent Operations",
+    blurb:
+      "Marketing, consent, and attribution governance at growth.kineticgain.com: Klaviyo consent audits, VWO experiment governance, martech evidence stacks, tokenized PII bridges, UTM attribution, and identity-lifecycle workbenches.",
+    accent: "#f97316",
   },
   "mcp-family": {
     id: "mcp-family",

@@ -96,6 +96,8 @@ const SIGNAL_QUERIES: Array<{ label: string; query: string }> = [
   { label: "Camunda", query: "camunda" },
   { label: "UKG", query: "ukg" },
   { label: "Azure", query: "azure" },
+  { label: "AWS", query: "aws" },
+  { label: "ServiceNow", query: "servicenow" },
   { label: "Genesys", query: "genesys" },
   { label: "Okta", query: "okta" },
 ];

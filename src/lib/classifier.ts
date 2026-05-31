@@ -107,6 +107,59 @@ const DECISION_INTELLIGENCE: ReadonlySet<string> = new Set([
   "evidence-ranking-engine",
 ]);
 
+const INDUSTRY_TELEMETRY: ReadonlySet<string> = new Set([
+  "procurement-pulse-engine",
+  "procurement-pulse-landing",
+  "procurement-pulse-action",
+  "ai-procurement-decision-spec",
+  "well-known-probe-js",
+  "vendor-ai-disclosure-inspector",
+]);
+
+const HEALTHTECH_STACK: ReadonlySet<string> = new Set([
+  "clinical-ai-disclosure-spec",
+  "clinical-event-narrative-review-board",
+  "gxp-change-control-board",
+  "specimen-chain-of-custody-console",
+  "batch-deviation-capa-ledger",
+  "lab-instrument-change-audit",
+  "assay-release-readiness-board",
+  "diagnostic-qc-evidence-router",
+  "trial-protocol-deviation-monitor",
+  "prior-authorization-evidence-router",
+  "patient-consent-audit-stream",
+  "fhir-resource-access-audit",
+  "fhir-resource-access-audit-reference",
+  "fda-samd-classification-board",
+  "clinical-bias-cohort-coverage-lab",
+  "medical-adverse-event-incident-card",
+  "hipaa-readiness-evidence-bundle",
+  "phi-vault-contract-profile",
+]);
+
+const GROWTH_OPS: ReadonlySet<string> = new Set([
+  "growth-systems-control-room",
+  "klaviyo-flow-consent-audit",
+  "vwo-experiment-governance-mirror",
+  "martech-experiment-evidence-stack",
+  "wordpress-member-journey-consent-kit",
+  "kg-skyyflow-klaviyo-bridge",
+  "skyyflow-klaviyo-bridge-console",
+  "kg-utm-attribution",
+  "conversion-funnel-intelligence-hub",
+  "kafka-real-time-attribution",
+  "attribution-warehouse-lab",
+  "revenue-cohort-modeler",
+  "attribution-intelligence-studio",
+  "identity-lifecycle-workbench",
+  "ab-testing-command-center",
+  "pricing-experiment-studio",
+  "experimentation_insights_kpi",
+  "customer-health-churn-api",
+  "tableau-permission-audit-lab",
+  "campaign-taxonomy-governor",
+]);
+
 const AGENT_OPS: ReadonlySet<string> = new Set([
   "agent-router",
   "agent-canary",
@@ -317,6 +370,9 @@ export function clustersFor(repo: Repo): Cluster[] {
   if (AGENT_OPS.has(repo.name)) tags.add("agent-ops");
   if (PLATFORM_RELIABILITY.has(repo.name)) tags.add("platform-reliability");
   if (DECISION_INTELLIGENCE.has(repo.name)) tags.add("decision-intelligence");
+  if (INDUSTRY_TELEMETRY.has(repo.name)) tags.add("industry-telemetry");
+  if (HEALTHTECH_STACK.has(repo.name)) tags.add("healthtech-stack");
+  if (GROWTH_OPS.has(repo.name)) tags.add("growth-ops");
 
   for (const hint of TOPIC_HINTS) {
     if (matchTopics(repo, hint.topics)) {
