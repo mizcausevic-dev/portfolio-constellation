@@ -177,6 +177,14 @@ const SALES_ENABLEMENT: ReadonlySet<string> = new Set([
   "rfp-response-assembler",
 ]);
 
+const EXECUTIVE_INTELLIGENCE: ReadonlySet<string> = new Set([
+  "boardroom-sparring-partner",
+  "category-thesis-builder",
+  "exit-room",
+  "brand-governance-styleguide",
+  "release-readiness-shell-kit",
+]);
+
 const AGENT_OPS: ReadonlySet<string> = new Set([
   "agent-router",
   "agent-canary",
@@ -391,6 +399,7 @@ export function clustersFor(repo: Repo): Cluster[] {
   if (HEALTHTECH_STACK.has(repo.name)) tags.add("healthtech-stack");
   if (GROWTH_OPS.has(repo.name)) tags.add("growth-ops");
   if (SALES_ENABLEMENT.has(repo.name)) tags.add("sales-enablement");
+  if (EXECUTIVE_INTELLIGENCE.has(repo.name)) tags.add("executive-intelligence");
 
   for (const hint of TOPIC_HINTS) {
     if (matchTopics(repo, hint.topics)) {

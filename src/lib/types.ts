@@ -38,6 +38,7 @@ export type Cluster =
   | "healthtech-stack"
   | "growth-ops"
   | "sales-enablement"
+  | "executive-intelligence"
   | "mcp-family"
   | "landing"
   | "frontend-showcase";
@@ -145,6 +146,13 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Buyer-diligence-response surfaces — the seller-side counterpart to the buyer-trust tooling at /trust/. Vendor proof-gap monitoring, trust-center evidence rooms, security-questionnaire answer studios, RFP response assembly. Readiness/posture framed, never certified.",
     accent: "#ec4899",
+  },
+  "executive-intelligence": {
+    id: "executive-intelligence",
+    label: "Executive Intelligence Stack",
+    blurb:
+      "Board-prep + investor-facing operator surfaces — Boardroom Sparring Partner (Q&A rehearsal), Category Thesis Builder (investor narrative), Exit Room (diligence gaps), Brand Governance Styleguide (CSS-first brand approvals), Release Readiness Shell Kit (launch + freeze posture). Survivors of the exec-family expansion triage; 4 overlapping siblings were archived.",
+    accent: "#a3e635",
   },
   "mcp-family": {
     id: "mcp-family",

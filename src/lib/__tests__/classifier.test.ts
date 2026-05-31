@@ -77,6 +77,14 @@ describe("clustersFor", () => {
     expect(clustersFor(repo({ name: "rfp-response-assembler" }))).toContain("sales-enablement");
   });
 
+  it("classifies board-prep + investor-facing repos into executive-intelligence", () => {
+    expect(clustersFor(repo({ name: "boardroom-sparring-partner" }))).toContain("executive-intelligence");
+    expect(clustersFor(repo({ name: "category-thesis-builder" }))).toContain("executive-intelligence");
+    expect(clustersFor(repo({ name: "exit-room" }))).toContain("executive-intelligence");
+    expect(clustersFor(repo({ name: "brand-governance-styleguide" }))).toContain("executive-intelligence");
+    expect(clustersFor(repo({ name: "release-readiness-shell-kit" }))).toContain("executive-intelligence");
+  });
+
   it("falls back to mcp-family for unknown mcp-prefixed repos by topic", () => {
     const r = repo({ name: "mcp-some-new-thing", topics: ["mcp"] });
     expect(clustersFor(r)).toContain("mcp-family");
