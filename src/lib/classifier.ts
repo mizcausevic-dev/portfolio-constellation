@@ -55,6 +55,16 @@ const KG_IMPLEMENTATION: ReadonlySet<string> = new Set([
   "kg-hosted-validator",
   "kg-validate-action",
   "aeo-registry",
+  // 2026-05-31 KG Suite Tools v2 batch — libraries shipped via v0.1.0 semver
+  "kg-suite-vault-contract-resolver",
+  "kg-suite-multi-vertical-conformance",
+  "kg-suite-incident-card-merger",
+  "kg-suite-decision-card-portal",
+  "kg-suite-conformance-runner-pro",
+  "kg-pulse-regression-issue-bot",
+  "kg-cui-vault-host",
+  "fhir-resource-access-audit-reference",
+  "skyyflow-klaviyo-bridge-console",
 ]);
 
 const AEO_STACK: ReadonlySet<string> = new Set([
