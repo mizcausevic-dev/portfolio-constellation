@@ -10,6 +10,7 @@ import {
   clusterStats,
   languageStats,
   overview,
+  signalStats,
   verticalStats,
 } from "./lib/aggregate";
 import { bakedSnapshot, fetchLiveSnapshot } from "./lib/data";
@@ -51,6 +52,7 @@ export default function App() {
   const langs = useMemo(() => languageStats(snapshot.repos), [snapshot]);
   const clusters = useMemo(() => clusterStats(snapshot.repos), [snapshot]);
   const verticals = useMemo(() => verticalStats(snapshot.repos), [snapshot]);
+  const signals = useMemo(() => signalStats(snapshot.repos), [snapshot]);
 
   return (
     <div className="app-root">
@@ -74,7 +76,9 @@ export default function App() {
           />
           <IndustryAtlas
             verticals={verticals}
+            signals={signals}
             onSelect={(vertical) => setFilters({ ...INITIAL_FILTERS, vertical })}
+            onSignal={(query) => setFilters({ ...INITIAL_FILTERS, query })}
           />
         </div>
 

@@ -89,6 +89,18 @@ describe("verticalsFor", () => {
   it("classifies skyforge into aerospace by name", () => {
     expect(verticalsFor(repo({ name: "skyforge" }))).toContain("aerospace");
   });
+  it("classifies biotech diagnostics repos by name when topics are sparse", () => {
+    expect(verticalsFor(repo({ name: "specimen-chain-of-custody-console" }))).toContain("biotech-diagnostics");
+  });
+  it("classifies nonprofit ops repos by name when topics are sparse", () => {
+    expect(verticalsFor(repo({ name: "grant-compliance-evidence-desk" }))).toContain("nonprofit-foundation");
+  });
+  it("classifies hr-tech repos by name when topics are sparse", () => {
+    expect(verticalsFor(repo({ name: "ukg-workforce-disclosure-mirror" }))).toContain("hr-tech-employment-ai");
+  });
+  it("classifies public-sector repos by name when topics are sparse", () => {
+    expect(verticalsFor(repo({ name: "gov-comment-ingestor" }))).toContain("govtech-public-sector-ai");
+  });
 });
 
 describe("freshness", () => {

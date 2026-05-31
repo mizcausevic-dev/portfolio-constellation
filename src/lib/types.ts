@@ -42,7 +42,12 @@ export type Cluster =
 export type Vertical =
   | "edtech"
   | "healthtech"
+  | "biotech-diagnostics"
   | "fintech"
+  | "insurance-insurtech"
+  | "nonprofit-foundation"
+  | "hr-tech-employment-ai"
+  | "govtech-public-sector-ai"
   | "real-estate"
   | "aerospace"
   | "robotics"
@@ -135,7 +140,12 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
 export const VERTICALS: Record<Vertical, VerticalMeta> = {
   edtech: { id: "edtech", label: "EdTech" },
   healthtech: { id: "healthtech", label: "HealthTech" },
+  "biotech-diagnostics": { id: "biotech-diagnostics", label: "Biotech / Diagnostics" },
   fintech: { id: "fintech", label: "FinTech" },
+  "insurance-insurtech": { id: "insurance-insurtech", label: "Insurance / InsurTech" },
+  "nonprofit-foundation": { id: "nonprofit-foundation", label: "Nonprofit / Foundation Ops" },
+  "hr-tech-employment-ai": { id: "hr-tech-employment-ai", label: "HR Tech / Employment AI" },
+  "govtech-public-sector-ai": { id: "govtech-public-sector-ai", label: "GovTech / Public Sector AI" },
   "real-estate": { id: "real-estate", label: "PropTech / Real Estate" },
   aerospace: { id: "aerospace", label: "Aerospace / Drones" },
   robotics: { id: "robotics", label: "Robotics" },

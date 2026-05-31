@@ -58,6 +58,14 @@ export function Hero({ overview, generatedAt, user, liveRefreshed }: Props) {
             <a className="hero-cta hero-cta-ghost" href="https://kineticgain.com" target="_blank" rel="noreferrer">
               <Globe className="hero-cta-icon" /> kineticgain.com
             </a>
+            <a
+              className="hero-cta hero-cta-ghost"
+              href="https://www.linkedin.com/in/mirzacausevic/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ExternalLink className="hero-cta-icon" /> LinkedIn
+            </a>
           </div>
         </motion.div>
 

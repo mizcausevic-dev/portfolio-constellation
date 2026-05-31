@@ -2,21 +2,23 @@ import { motion } from "motion/react";
 import type { VerticalStat } from "../lib/aggregate";
 import type { Vertical } from "../lib/types";
 
-interface Props {
-  verticals: VerticalStat[];
-  onSelect: (vertical: Vertical) => void;
+interface PlatformSignal {
+  label: string;
+  count: number;
+  query: string;
 }
 
-/**
- * Industry-vertical coverage atlas. Renders one chip per vertical the
- * portfolio touches, sized by repo count so coverage is immediately legible.
- * Click filters the grid below.
- */
-export function IndustryAtlas({ verticals, onSelect }: Props) {
-  const max = verticals.reduce((m, v) => Math.max(m, v.count), 1);
+interface Props {
+  verticals: VerticalStat[];
+  signals: PlatformSignal[];
+  onSelect: (vertical: Vertical) => void;
+  onSignal: (query: string) => void;
+}
+
+export function IndustryAtlas({ verticals, signals, onSelect, onSignal }: Props) {
   return (
     <motion.section
-      className="atlas-panel"
+      className="atlas-panel atlas-panel-compact"
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35 }}
@@ -24,29 +26,40 @@ export function IndustryAtlas({ verticals, onSelect }: Props) {
       <header className="atlas-head">
         <div>
           <h2>Industry atlas</h2>
-          <p>
-            Verticals represented across the portfolio. Bubble size is repo count. Click any
-            chip to filter the grid below to only that vertical.
-          </p>
+          <p>Verticals and company-tag traces across the current public portfolio. Click to filter.</p>
         </div>
         <span className="atlas-pill">{verticals.length} verticals</span>
       </header>
-      <div className="industry-grid">
-        {verticals.map((v) => {
-          const weight = v.count / max;
-          return (
+
+      <div className="industry-grid industry-grid-compact">
+        {verticals.map((vertical) => (
+          <button
+            key={vertical.id}
+            type="button"
+            className="industry-chip"
+            onClick={() => onSelect(vertical.id)}
+          >
+            <span className="industry-chip-label">{vertical.label}</span>
+            <span className="industry-chip-count">{vertical.count}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="atlas-signal-block">
+        <div className="atlas-signal-head">Platform and company signals</div>
+        <div className="atlas-signal-grid">
+          {signals.map((signal) => (
             <button
-              key={v.id}
+              key={signal.label}
               type="button"
-              className="industry-chip"
-              onClick={() => onSelect(v.id)}
-              style={{ ["--w" as never]: weight as never }}
+              className="atlas-signal-chip"
+              onClick={() => onSignal(signal.query)}
             >
-              <span className="industry-chip-label">{v.label}</span>
-              <span className="industry-chip-count">{v.count}</span>
+              <span>{signal.label}</span>
+              <span className="atlas-signal-count">{signal.count}</span>
             </button>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </motion.section>
   );

@@ -61,6 +61,12 @@ export interface VerticalStat {
   repos: Repo[];
 }
 
+export interface SignalStat {
+  label: string;
+  query: string;
+  count: number;
+}
+
 export function verticalStats(repos: readonly Repo[]): VerticalStat[] {
   const buckets = new Map<Vertical, Repo[]>();
   for (const r of repos) {
@@ -82,6 +88,27 @@ export function verticalStats(repos: readonly Repo[]): VerticalStat[] {
   }
   out.sort((a, b) => b.count - a.count);
   return out;
+}
+
+const SIGNAL_QUERIES: Array<{ label: string; query: string }> = [
+  { label: "IBM", query: "ibm" },
+  { label: "CyberArk", query: "cyberark" },
+  { label: "Camunda", query: "camunda" },
+  { label: "UKG", query: "ukg" },
+  { label: "Azure", query: "azure" },
+  { label: "Genesys", query: "genesys" },
+  { label: "Okta", query: "okta" },
+];
+
+export function signalStats(repos: readonly Repo[]): SignalStat[] {
+  return SIGNAL_QUERIES.map((signal) => {
+    const query = signal.query.toLowerCase();
+    const count = repos.filter((repo) => {
+      const blob = [repo.name, repo.description, repo.homepage ?? "", ...repo.topics].join(" ").toLowerCase();
+      return blob.includes(query);
+    }).length;
+    return { ...signal, count };
+  }).filter((signal) => signal.count > 0);
 }
 
 export interface PortfolioOverview {

@@ -161,8 +161,43 @@ const VERTICAL_HINTS: Array<{ vertical: Vertical; topics: string[] }> = [
     topics: ["healthtech", "hipaa", "fda", "samd", "fhir", "clinical-ai", "patient-flow", "population-health"],
   },
   {
+    vertical: "biotech-diagnostics",
+    topics: [
+      "biotech",
+      "diagnostics",
+      "laboratory-operations",
+      "gxp",
+      "gmp",
+      "glp",
+      "gcp",
+      "capa",
+      "chain-of-custody",
+      "pharmacovigilance",
+      "meddra",
+      "clinical-trials",
+      "quality-control",
+      "batch-release",
+    ],
+  },
+  {
     vertical: "fintech",
     topics: ["fintech", "payments", "pci-dss", "billing", "finops", "fraud"],
+  },
+  {
+    vertical: "insurance-insurtech",
+    topics: ["insurance", "insurtech", "claims", "underwriting", "policy-admin", "loss-ratio", "naic"],
+  },
+  {
+    vertical: "nonprofit-foundation",
+    topics: ["nonprofit", "foundation-ops", "grant-compliance", "fundraising", "donor-ops", "program-outcomes"],
+  },
+  {
+    vertical: "hr-tech-employment-ai",
+    topics: ["hr-tech", "workforce-ops", "employee-comms", "employment-ai", "ukg", "human-capital"],
+  },
+  {
+    vertical: "govtech-public-sector-ai",
+    topics: ["govtech", "public-sector-ai", "government-ops", "state-disclosure", "federal-ai", "civic-tech"],
   },
   {
     vertical: "real-estate",
@@ -325,13 +360,20 @@ export function verticalsFor(repo: Repo): Vertical[] {
   // Name-only heuristics for repos with stub topics.
   const n = repo.name.toLowerCase();
   if (/\bcyberark|identity|access|tenant|secret\b/.test(n)) out.add("iam-security");
+  if (/\b(ukg|employee|workforce|employment)\b/.test(n)) out.add("hr-tech-employment-ai");
+  if (/\b(grant|donor|stewardship|appeal|outcome)\b/.test(n)) out.add("nonprofit-foundation");
+  if (/\b(claim|underwriting|policyholder|insur|loss|reserve)\b/.test(n)) out.add("insurance-insurtech");
+  if (/\b(government|gov-comment|public-sector|citizen|state-|omb|procurement-pulse)\b/.test(n)) out.add("govtech-public-sector-ai");
   if (/\bclinical|patient|care-pathway|learner\b/.test(n)) {
     if (/\blearner\b/.test(n)) out.add("edtech");
     else out.add("healthtech");
   }
+  if (/\b(assay|diagnostic|specimen|capa|gxp|pharmacovigilance|narrative|lab-instrument|trial-protocol|batch-deviation)\b/.test(n)) {
+    out.add("biotech-diagnostics");
+  }
   if (/\b(showing|lead-routing|property)\b/.test(n) && !/\bsearch\b/.test(n)) out.add("real-estate");
   if (/\b(skyforge|orbitforge)\b/.test(n)) out.add("aerospace");
-  if (/\b(bodyforge)\b/.test(n)) out.add("robotics");
+  if (/\b(bodyforge|robot|sensor-health|override)\b/.test(n)) out.add("robotics");
   return [...out];
 }
 

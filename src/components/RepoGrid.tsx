@@ -45,7 +45,7 @@ export function RepoGrid({ repos, filters, onFilters }: Props) {
       <div className="section-head">
         <h2>Every repo</h2>
         <p>
-          Filterable atlas of every public repo. Search by name / description / topic, or
+          Filterable atlas of every public repo in the live GitHub snapshot. Search by name / description / topic, or
           drill into a single platform, vertical, language, or freshness window.
         </p>
       </div>

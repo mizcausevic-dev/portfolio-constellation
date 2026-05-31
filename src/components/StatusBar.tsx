@@ -17,12 +17,20 @@ export function StatusBar({ total, generatedAt, liveRefreshed }: Props) {
         <span>repos: {total.toLocaleString()}</span>
       </div>
       <div className="status-bar-right">
-        <a href="https://github.com/mizcausevic-dev/portfolio-constellation" target="_blank" rel="noreferrer">
-          source
+        <a href="https://github.com/mizcausevic-dev/" target="_blank" rel="noreferrer">
+          github
+        </a>
+        <span className="status-sep">·</span>
+        <a href="https://www.linkedin.com/in/mirzacausevic/" target="_blank" rel="noreferrer">
+          linkedin
         </a>
         <span className="status-sep">·</span>
         <a href="https://kineticgain.com" target="_blank" rel="noreferrer">
           kineticgain.com
+        </a>
+        <span className="status-sep">·</span>
+        <a href="https://github.com/mizcausevic-dev/portfolio-constellation" target="_blank" rel="noreferrer">
+          source
         </a>
         <span className="status-sep">·</span>
         <span className="status-ver">v0.1.0</span>
