@@ -70,6 +70,13 @@ describe("clustersFor", () => {
     expect(clustersFor(repo({ name: "growth-systems-control-room" }))).toContain("growth-ops");
   });
 
+  it("classifies buyer-diligence-response repos into sales-enablement", () => {
+    expect(clustersFor(repo({ name: "vendor-proof-gap-monitor" }))).toContain("sales-enablement");
+    expect(clustersFor(repo({ name: "trust-center-evidence-room" }))).toContain("sales-enablement");
+    expect(clustersFor(repo({ name: "security-questionnaire-answer-studio" }))).toContain("sales-enablement");
+    expect(clustersFor(repo({ name: "rfp-response-assembler" }))).toContain("sales-enablement");
+  });
+
   it("falls back to mcp-family for unknown mcp-prefixed repos by topic", () => {
     const r = repo({ name: "mcp-some-new-thing", topics: ["mcp"] });
     expect(clustersFor(r)).toContain("mcp-family");

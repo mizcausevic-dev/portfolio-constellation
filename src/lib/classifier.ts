@@ -160,6 +160,13 @@ const GROWTH_OPS: ReadonlySet<string> = new Set([
   "campaign-taxonomy-governor",
 ]);
 
+const SALES_ENABLEMENT: ReadonlySet<string> = new Set([
+  "vendor-proof-gap-monitor",
+  "trust-center-evidence-room",
+  "security-questionnaire-answer-studio",
+  "rfp-response-assembler",
+]);
+
 const AGENT_OPS: ReadonlySet<string> = new Set([
   "agent-router",
   "agent-canary",
@@ -373,6 +380,7 @@ export function clustersFor(repo: Repo): Cluster[] {
   if (INDUSTRY_TELEMETRY.has(repo.name)) tags.add("industry-telemetry");
   if (HEALTHTECH_STACK.has(repo.name)) tags.add("healthtech-stack");
   if (GROWTH_OPS.has(repo.name)) tags.add("growth-ops");
+  if (SALES_ENABLEMENT.has(repo.name)) tags.add("sales-enablement");
 
   for (const hint of TOPIC_HINTS) {
     if (matchTopics(repo, hint.topics)) {

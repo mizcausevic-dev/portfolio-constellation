@@ -37,6 +37,7 @@ export type Cluster =
   | "industry-telemetry"
   | "healthtech-stack"
   | "growth-ops"
+  | "sales-enablement"
   | "mcp-family"
   | "landing"
   | "frontend-showcase";
@@ -137,6 +138,13 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Marketing, consent, and attribution governance at growth.kineticgain.com: Klaviyo consent audits, VWO experiment governance, martech evidence stacks, tokenized PII bridges, UTM attribution, and identity-lifecycle workbenches.",
     accent: "#f97316",
+  },
+  "sales-enablement": {
+    id: "sales-enablement",
+    label: "Sales Enablement Stack",
+    blurb:
+      "Buyer-diligence-response surfaces — the seller-side counterpart to the buyer-trust tooling at /trust/. Vendor proof-gap monitoring, trust-center evidence rooms, security-questionnaire answer studios, RFP response assembly. Readiness/posture framed, never certified.",
+    accent: "#ec4899",
   },
   "mcp-family": {
     id: "mcp-family",
