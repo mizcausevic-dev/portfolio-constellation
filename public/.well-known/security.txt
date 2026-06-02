@@ -1,0 +1,54 @@
+# Kinetic Gain LLC — Security contact (RFC 9116)
+#
+# If you've discovered a vulnerability affecting any kineticgain.com
+# property, the open Kinetic Gain Protocol Suite (kinetic-gain-protocol-
+# suite), the Kinetic Gain Embedded SDK (kinetic-gain-embedded), the
+# AI Procurement Pulse engine (procurement-pulse-engine), the MCP server
+# (mcp-kinetic-gain), the AI Vendor Disclosure Inspector
+# (kineticgain-vendor-inspector), or any of the 21 GitHub Actions
+# published under github.com/marketplace?type=actions&query=Kinetic+Gain,
+# please use the contact below. We commit to acknowledging within 72
+# hours and to crediting the reporter (if desired) in the fix release.
+
+Contact: mailto:miz@kineticgain.com
+Expires: 2027-06-01T00:00:00.000Z
+Encryption: https://kineticgain.com/.well-known/pulse-signing.json
+Preferred-Languages: en
+Canonical: https://portfolio.kineticgain.com/.well-known/security.txt
+Canonical: https://kineticgain.com/.well-known/security.txt
+Policy: https://kineticgain.com/trust/
+
+# Scope
+#
+# In scope:
+#   - kineticgain.com (apex) and all *.kineticgain.com subdomains
+#   - npm packages under @kineticgain or starting with kinetic-gain-
+#   - GitHub Marketplace Actions under github.com/mizcausevic-dev
+#   - PyPI / crates.io / Go module proxy artifacts under the kinetic-gain-
+#     SDK family
+#   - Browser extension + Greasemonkey userscript from the kineticgain-
+#     vendor-inspector repo
+#
+# Out of scope:
+#   - Synthetic case-study numbers in /embedded/case-study/ (explicitly
+#     disclosed as illustrative)
+#   - The Pulse universe domains themselves (third-party properties)
+#   - Anything served from a non-kineticgain.com domain
+#
+# Coordinated disclosure
+#
+# We follow standard coordinated disclosure: report privately, we
+# investigate + fix, then we publish + credit. 90-day clock unless a
+# user-facing exploit is observed in the wild.
+#
+# Cryptographic verification
+#
+# The Encryption: URL above is our ed25519 public key (SPKI-DER, base64).
+# All 11 Suite documents at /.well-known/<spec>.json carry signatures
+# verifiable against that key. To verify our signature on this file or
+# any other published artifact, see
+# https://kineticgain.com/trust/signing-policy/ for the procedure.
+#
+# Bug bounty: not yet — we are pre-commercial. Coordinated disclosure
+# is acknowledged with a credit in the fix release notes and (where
+# applicable) a thank-you note in the relevant changelog.
