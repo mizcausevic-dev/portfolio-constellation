@@ -1,8 +1,129 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-02T19:29:06.378Z",
-  "total": 561,
+  "generated_at": "2026-06-03T01:28:05.571Z",
+  "total": 564,
   "repos": [
+    {
+      "name": "operating-model-friction-index",
+      "description": "",
+      "url": "https://github.com/mizcausevic-dev/operating-model-friction-index",
+      "language": "TypeScript",
+      "topics": [
+        "board-intelligence",
+        "coordination-overhead",
+        "decision-drag",
+        "executive-intelligence",
+        "friction-analysis",
+        "operating-model",
+        "operating-model-friction-index",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-03T01:25:27Z",
+      "updated_at": "2026-06-03T01:25:31Z",
+      "created_at": "2026-06-02T14:24:18Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://friction.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "ai-vendor-concentration-watch",
+      "description": "Board-ready executive intelligence surface for tracking AI vendor concentration, switching pressure, supplier dependency, and mitigation posture.",
+      "url": "https://github.com/mizcausevic-dev/ai-vendor-concentration-watch",
+      "language": "TypeScript",
+      "topics": [
+        "ai-vendor-risk",
+        "board-ready-intelligence",
+        "governance",
+        "supplier-concentration",
+        "switching-cost",
+        "typescript",
+        "vendor-replacement"
+      ],
+      "pushed_at": "2026-06-03T00:28:43Z",
+      "updated_at": "2026-06-03T00:28:47Z",
+      "created_at": "2026-06-03T00:26:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://vendors.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "procurement-pulse-engine",
+      "description": "Crawl + aggregate engine behind the AI Procurement Pulse. Probes 895 vendor domains for 11 Kinetic Gain Protocol Suite docs. v0.4 per-spec discriminator kills SPA catchall false positives. KG dogfood verified=11/11 ed25519.",
+      "url": "https://github.com/mizcausevic-dev/procurement-pulse-engine",
+      "language": "JavaScript",
+      "topics": [
+        "ai-governance",
+        "ai-procurement-pulse",
+        "crawler",
+        "data-journalism",
+        "javascript",
+        "kinetic-gain-protocol-suite",
+        "procurement",
+        "research",
+        "well-known"
+      ],
+      "pushed_at": "2026-06-03T00:18:40Z",
+      "updated_at": "2026-06-03T00:18:45Z",
+      "created_at": "2026-05-21T17:53:52Z",
+      "stars": 1,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://pulse.kineticgain.com/",
+      "license": "MIT"
+    },
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-06-03T00:18:36Z",
+      "updated_at": "2026-06-03T00:18:39Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "microsoft-graph-permission-scope-auditor",
+      "description": "Microsoft Graph Permission Scope Auditor — operator surface for OAuth scope governance, over-permissioned apps, Conditional Access coverage gaps, scope-creep detection. Static HTML, browser-only, no backend. Buyer-facing operator surface (scopes.kineticgain.com).",
+      "url": "https://github.com/mizcausevic-dev/microsoft-graph-permission-scope-auditor",
+      "language": "HTML",
+      "topics": [
+        "audit-stream",
+        "conditional-access",
+        "entra",
+        "iam",
+        "kinetic-gain",
+        "microsoft-graph",
+        "oauth-scopes",
+        "operator-surface",
+        "security",
+        "static-html"
+      ],
+      "pushed_at": "2026-06-03T00:16:21Z",
+      "updated_at": "2026-06-03T00:16:23Z",
+      "created_at": "2026-06-03T00:12:45Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://scopes.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
     {
       "name": "pharmacovigilance-review-reporting-hub",
       "description": "Operator surface for adverse-event queue, signal-detection clusters, regulator-reporting deadlines (FDA MedWatch 15-day / EU MDR vigilance / PMDA), and causality-assessment workflow. Browser-only, no telemetry. AGPL-3.0.",
@@ -24,8 +145,8 @@
         "signal-detection",
         "static-html"
       ],
-      "pushed_at": "2026-06-02T15:05:28Z",
-      "updated_at": "2026-06-02T15:11:25Z",
+      "pushed_at": "2026-06-02T23:16:39Z",
+      "updated_at": "2026-06-02T23:16:41Z",
       "created_at": "2026-06-02T15:05:23Z",
       "stars": 0,
       "forks": 0,
@@ -53,14 +174,14 @@
         "soc-2",
         "static-html"
       ],
-      "pushed_at": "2026-06-02T15:05:17Z",
-      "updated_at": "2026-06-02T15:18:01Z",
+      "pushed_at": "2026-06-02T23:16:32Z",
+      "updated_at": "2026-06-02T23:16:34Z",
       "created_at": "2026-06-02T15:05:12Z",
       "stars": 0,
       "forks": 0,
       "archived": false,
       "fork": false,
-      "homepage": "https://tenant.kineticgain.com/",
+      "homepage": "https://mt.kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
@@ -84,8 +205,8 @@
         "ukg",
         "workday"
       ],
-      "pushed_at": "2026-06-02T15:05:05Z",
-      "updated_at": "2026-06-02T15:13:08Z",
+      "pushed_at": "2026-06-02T23:16:24Z",
+      "updated_at": "2026-06-02T23:16:26Z",
       "created_at": "2026-06-02T15:05:01Z",
       "stars": 0,
       "forks": 0,
@@ -113,8 +234,8 @@
         "sox-itgc",
         "static-html"
       ],
-      "pushed_at": "2026-06-02T14:56:14Z",
-      "updated_at": "2026-06-02T14:59:28Z",
+      "pushed_at": "2026-06-02T23:16:02Z",
+      "updated_at": "2026-06-02T23:16:04Z",
       "created_at": "2026-06-02T14:50:06Z",
       "stars": 0,
       "forks": 0,
@@ -122,6 +243,56 @@
       "fork": false,
       "homepage": "https://cert.kineticgain.com/",
       "license": "AGPL-3.0"
+    },
+    {
+      "name": "identity-cost-drift-brief",
+      "description": "Board-ready identity cost drift brief for license waste, review burden, access overlap, and control reset posture.",
+      "url": "https://github.com/mizcausevic-dev/identity-cost-drift-brief",
+      "language": "TypeScript",
+      "topics": [
+        "access-governance",
+        "board-reporting",
+        "cost-optimization",
+        "executive-intelligence",
+        "finops",
+        "identity-management",
+        "kinetic-gain",
+        "microsoft-entra",
+        "security-operations",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-02T22:58:37Z",
+      "updated_at": "2026-06-02T22:56:52Z",
+      "created_at": "2026-06-02T22:52:12Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://idcost.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-02T19:29:07Z",
+      "updated_at": "2026-06-02T19:29:11Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
     },
     {
       "name": "revenue-control-breakage-map",
@@ -149,31 +320,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "operating-model-friction-index",
-      "description": "",
-      "url": "https://github.com/mizcausevic-dev/operating-model-friction-index",
-      "language": "TypeScript",
-      "topics": [
-        "board-intelligence",
-        "coordination-overhead",
-        "decision-drag",
-        "executive-intelligence",
-        "friction-analysis",
-        "operating-model",
-        "operating-model-friction-index",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-02T14:26:17Z",
-      "updated_at": "2026-06-02T14:33:58Z",
-      "created_at": "2026-06-02T14:24:18Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "http://friction.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "kinetic-gain-suite-landing",
       "description": "Canonical front-door landing for the Kinetic Gain Protocol Suite. 10 open governance specs across 2 regulated verticals. Deploys to suite.kineticgain.com.",
       "url": "https://github.com/mizcausevic-dev/kinetic-gain-suite-landing",
@@ -187,29 +333,6 @@
       "archived": false,
       "fork": false,
       "homepage": null,
-      "license": "NOASSERTION"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-02T13:54:11Z",
-      "updated_at": "2026-06-02T13:54:45Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
       "license": "NOASSERTION"
     },
     {
@@ -233,25 +356,6 @@
       "fork": false,
       "homepage": "https://suite.kineticgain.com",
       "license": "MIT"
-    },
-    {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-06-02T12:13:47Z",
-      "updated_at": "2026-06-02T12:13:51Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
     },
     {
       "name": "kg-suite-fleet-dashboard",
@@ -359,32 +463,6 @@
       "fork": false,
       "homepage": "https://pulse.kineticgain.com/",
       "license": "NOASSERTION"
-    },
-    {
-      "name": "procurement-pulse-engine",
-      "description": "Crawl + aggregate engine behind the AI Procurement Pulse. Probes 895 vendor domains for 11 Kinetic Gain Protocol Suite docs. v0.4 per-spec discriminator kills SPA catchall false positives. KG dogfood verified=11/11 ed25519.",
-      "url": "https://github.com/mizcausevic-dev/procurement-pulse-engine",
-      "language": "JavaScript",
-      "topics": [
-        "ai-governance",
-        "ai-procurement-pulse",
-        "crawler",
-        "data-journalism",
-        "javascript",
-        "kinetic-gain-protocol-suite",
-        "procurement",
-        "research",
-        "well-known"
-      ],
-      "pushed_at": "2026-06-02T11:42:19Z",
-      "updated_at": "2026-06-02T11:42:23Z",
-      "created_at": "2026-05-21T17:53:52Z",
-      "stars": 1,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://pulse.kineticgain.com/",
-      "license": "MIT"
     },
     {
       "name": "shopper-pii-vault-contract-profile",
