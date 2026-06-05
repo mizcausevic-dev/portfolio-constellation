@@ -1,22 +1,113 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-05T01:18:39.514Z",
+  "generated_at": "2026-06-05T07:46:05.549Z",
   "total": 575,
   "repos": [
+    {
+      "name": "mizcausevic-dev",
+      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
+      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
+      "language": null,
+      "topics": [
+        "enterprise-software",
+        "fullstack-development"
+      ],
+      "pushed_at": "2026-06-05T01:53:13Z",
+      "updated_at": "2026-06-05T01:53:16Z",
+      "created_at": "2026-05-06T23:11:17Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic.com/skills/",
+      "license": null
+    },
+    {
+      "name": "procurement-pulse-landing",
+      "description": "AI Procurement Pulse — a quarterly research publication measuring vendor AI governance disclosure. Issue #0 (methodology) live at pulse.kineticgain.com; Issue #1 with real crawl data ships Q3 2026.",
+      "url": "https://github.com/mizcausevic-dev/procurement-pulse-landing",
+      "language": "HTML",
+      "topics": [
+        "ai-disclosure",
+        "ai-governance",
+        "decision-intelligence",
+        "kinetic-gain-protocol-suite",
+        "landing-page",
+        "procurement",
+        "quarterly-report",
+        "research-publication",
+        "well-known"
+      ],
+      "pushed_at": "2026-06-05T01:45:51Z",
+      "updated_at": "2026-06-05T01:45:55Z",
+      "created_at": "2026-05-16T07:17:02Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://pulse.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "inbound-lead-scorer-ml",
+      "description": "Board-ready Kinetic Gain surface for scoring inbound leads using fit, behavior, attribution, and pipeline-priority signals.",
+      "url": "https://github.com/mizcausevic-dev/inbound-lead-scorer-ml",
+      "language": "TypeScript",
+      "topics": [
+        "gtm-systems",
+        "kinetic-gain",
+        "lead-scoring",
+        "ml-ops",
+        "revenue-ops",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-05T01:44:19Z",
+      "updated_at": "2026-06-05T01:43:54Z",
+      "created_at": "2026-05-24T18:59:06Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://leads.kineticgain.com/",
+      "license": null
+    },
     {
       "name": "kinetic-gain-suite-landing",
       "description": "Canonical front-door landing for the Kinetic Gain Protocol Suite. 10 open governance specs across 2 regulated verticals. Deploys to suite.kineticgain.com.",
       "url": "https://github.com/mizcausevic-dev/kinetic-gain-suite-landing",
       "language": "HTML",
       "topics": [],
-      "pushed_at": "2026-06-05T01:02:49Z",
-      "updated_at": "2026-06-05T01:02:52Z",
+      "pushed_at": "2026-06-05T01:25:30Z",
+      "updated_at": "2026-06-05T01:25:33Z",
       "created_at": "2026-05-12T21:02:04Z",
       "stars": 0,
       "forks": 0,
       "archived": false,
       "fork": false,
       "homepage": null,
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-05T01:18:40Z",
+      "updated_at": "2026-06-05T01:18:44Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
       "license": "NOASSERTION"
     },
     {
@@ -166,25 +257,6 @@
       "fork": false,
       "homepage": "https://kineticgain.com/",
       "license": "MIT"
-    },
-    {
-      "name": "mizcausevic-dev",
-      "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
-      "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
-      "language": null,
-      "topics": [
-        "enterprise-software",
-        "fullstack-development"
-      ],
-      "pushed_at": "2026-06-04T22:02:03Z",
-      "updated_at": "2026-06-04T22:02:06Z",
-      "created_at": "2026-05-06T23:11:17Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic.com/skills/",
-      "license": null
     },
     {
       "name": "seo-vital-monitor",
@@ -404,29 +476,6 @@
       "fork": false,
       "homepage": "https://access.kineticgain.com/",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-04T19:01:08Z",
-      "updated_at": "2026-06-04T19:01:16Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "detection-gap-coverage-lab",
@@ -2017,32 +2066,6 @@
       "fork": false,
       "homepage": "https://disclosure.kineticgain.com",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "procurement-pulse-landing",
-      "description": "AI Procurement Pulse — a quarterly research publication measuring vendor AI governance disclosure. Issue #0 (methodology) live at pulse.kineticgain.com; Issue #1 with real crawl data ships Q3 2026.",
-      "url": "https://github.com/mizcausevic-dev/procurement-pulse-landing",
-      "language": "HTML",
-      "topics": [
-        "ai-disclosure",
-        "ai-governance",
-        "decision-intelligence",
-        "kinetic-gain-protocol-suite",
-        "landing-page",
-        "procurement",
-        "quarterly-report",
-        "research-publication",
-        "well-known"
-      ],
-      "pushed_at": "2026-06-04T17:33:52Z",
-      "updated_at": "2026-06-04T17:33:56Z",
-      "created_at": "2026-05-16T07:17:02Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://pulse.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "student-ai-disclosure-landing",
@@ -6472,9 +6495,9 @@
         "typescript"
       ],
       "pushed_at": "2026-06-01T05:46:45Z",
-      "updated_at": "2026-06-01T04:11:44Z",
+      "updated_at": "2026-06-05T05:40:58Z",
       "created_at": "2026-05-07T23:20:03Z",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "archived": false,
       "fork": false,
@@ -8187,29 +8210,6 @@
       "fork": false,
       "homepage": null,
       "license": "MIT"
-    },
-    {
-      "name": "inbound-lead-scorer-ml",
-      "description": "Revenue-priority scoring control plane for inbound leads using fit, intent, attribution, and routing-safe score explanations.",
-      "url": "https://github.com/mizcausevic-dev/inbound-lead-scorer-ml",
-      "language": "TypeScript",
-      "topics": [
-        "analytics",
-        "growth-engineering",
-        "lead-scoring",
-        "machine-learning",
-        "revops",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-01T04:09:11Z",
-      "updated_at": "2026-05-24T18:59:18Z",
-      "created_at": "2026-05-24T18:59:06Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://kineticgain.com/",
-      "license": null
     },
     {
       "name": "audit-graph-explorer",
