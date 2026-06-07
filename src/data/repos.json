@@ -1,8 +1,31 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-07T07:38:45.728Z",
+  "generated_at": "2026-06-07T12:46:18.598Z",
   "total": 621,
   "repos": [
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-07T07:38:46Z",
+      "updated_at": "2026-06-07T07:38:50Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "approval-workflow-orchestrator",
       "description": "C# ASP.NET Core workflow backend for approval routing, SLA-aware escalation, policy exception review, and audit-history visibility.",
@@ -78,29 +101,6 @@
       "fork": false,
       "homepage": "https://provenance-lab.kineticgain.com/",
       "license": "Apache-2.0"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-07T01:22:12Z",
-      "updated_at": "2026-06-07T01:22:16Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "market-latency-budget-simulator",
