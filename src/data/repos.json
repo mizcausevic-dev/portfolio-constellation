@@ -1,8 +1,57 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-08T17:17:06.751Z",
+  "generated_at": "2026-06-08T19:02:35.012Z",
   "total": 721,
   "repos": [
+    {
+      "name": "regulatory-comment-intelligence-hub",
+      "description": "TypeScript control plane for regulatory comment intake, obligation mapping, approval posture, and evidence-packaged submission workflows.",
+      "url": "https://github.com/mizcausevic-dev/regulatory-comment-intelligence-hub",
+      "language": "TypeScript",
+      "topics": [
+        "b2b-saas",
+        "compliance",
+        "control-plane",
+        "govtech",
+        "kinetic-gain",
+        "operator-tooling",
+        "policy-automation",
+        "regtech",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-08T18:06:15Z",
+      "updated_at": "2026-06-03T20:27:42Z",
+      "created_at": "2026-05-25T17:01:18Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-08T17:17:07Z",
+      "updated_at": "2026-06-08T17:17:12Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "crop-compliance-observation-ledger",
       "description": "TypeScript control plane for crop observations, evidence blockers, field posture, and buyer-safe agri compliance operations.",
@@ -3820,29 +3869,6 @@
       "fork": false,
       "homepage": "https://priorauth.kineticgain.com",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T08:04:37Z",
-      "updated_at": "2026-06-08T08:04:41Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "catalog-schema-governance-studio",
@@ -9453,32 +9479,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://suite.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "regulatory-comment-intelligence-hub",
-      "description": "TypeScript control plane for regulatory comment intake, obligation mapping, approval posture, and evidence-packaged submission workflows.",
-      "url": "https://github.com/mizcausevic-dev/regulatory-comment-intelligence-hub",
-      "language": "TypeScript",
-      "topics": [
-        "b2b-saas",
-        "compliance",
-        "control-plane",
-        "govtech",
-        "kinetic-gain",
-        "operator-tooling",
-        "policy-automation",
-        "regtech",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-03T20:28:31Z",
-      "updated_at": "2026-06-03T20:27:42Z",
-      "created_at": "2026-05-25T17:01:18Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
