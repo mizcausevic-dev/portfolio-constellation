@@ -1,8 +1,224 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-10T01:19:39.121Z",
+  "generated_at": "2026-06-10T07:46:57.301Z",
   "total": 721,
   "repos": [
+    {
+      "name": "anomaly-log-hunter",
+      "description": "Access-log anomaly detection, source clustering, and traffic-forensics posture for growth and security teams.",
+      "url": "https://github.com/mizcausevic-dev/anomaly-log-hunter",
+      "language": "TypeScript",
+      "topics": [
+        "anomaly-detection",
+        "edge-security",
+        "express",
+        "growth-ops",
+        "growth-systems",
+        "kinetic-gain",
+        "log-analysis",
+        "revops",
+        "traffic-integrity",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T07:43:28Z",
+      "updated_at": "2026-06-10T07:43:32Z",
+      "created_at": "2026-05-17T20:55:49Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://anomaly.kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "ai-brand-guardrails",
+      "description": "Board-ready Kinetic Gain surface for enforcing brand tone, factual posture, PII stripping, and approval readiness across AI-generated marketing content.",
+      "url": "https://github.com/mizcausevic-dev/ai-brand-guardrails",
+      "language": "TypeScript",
+      "topics": [
+        "ai-marketing",
+        "brand-ops",
+        "gtm-systems",
+        "kinetic-gain",
+        "policy-engine",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T07:17:56Z",
+      "updated_at": "2026-06-10T07:18:00Z",
+      "created_at": "2026-05-23T22:02:31Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://brand.kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "bigquery-query-risk-profiler",
+      "description": "Operator surface for BigQuery query risk, slot pressure, SQL cost exposure, and remediation routing across data engineering estates.",
+      "url": "https://github.com/mizcausevic-dev/bigquery-query-risk-profiler",
+      "language": "TypeScript",
+      "topics": [
+        "bigquery",
+        "cost-governance",
+        "data-engineering",
+        "kinetic-gain",
+        "operator-console",
+        "sql"
+      ],
+      "pushed_at": "2026-06-10T06:59:50Z",
+      "updated_at": "2026-06-10T06:59:56Z",
+      "created_at": "2026-06-06T23:32:25Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://mizcausevic-dev.github.io/bigquery-query-risk-profiler/",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "bigquery-query-cost-watch",
+      "description": "BigQuery operator surface for query-cost governance, slot pressure, attribution hygiene, and optimization sequencing.",
+      "url": "https://github.com/mizcausevic-dev/bigquery-query-cost-watch",
+      "language": "TypeScript",
+      "topics": [
+        "bigquery",
+        "data-platform",
+        "finops",
+        "google-cloud",
+        "query-governance",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T06:26:12Z",
+      "updated_at": "2026-06-10T06:26:16Z",
+      "created_at": "2026-05-28T01:21:59Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://bigquery.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "azure-landing-zone-drift-radar",
+      "description": "Azure landing-zone drift radar for policy inheritance gaps, owner-role drift, perimeter exposure, diagnostics coverage, and Defender posture.",
+      "url": "https://github.com/mizcausevic-dev/azure-landing-zone-drift-radar",
+      "language": "TypeScript",
+      "topics": [
+        "azure",
+        "cloud-security",
+        "landing-zones",
+        "management-groups",
+        "platform-engineering",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T05:21:27Z",
+      "updated_at": "2026-06-10T05:21:29Z",
+      "created_at": "2026-05-27T01:09:06Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://zone.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "aws-iam-access-analyzer-console",
+      "description": "Operator surface for AWS IAM Access Analyzer posture, public access, cross-account trust, and remediation sequencing.",
+      "url": "https://github.com/mizcausevic-dev/aws-iam-access-analyzer-console",
+      "language": "TypeScript",
+      "topics": [
+        "aws",
+        "cloud-security",
+        "iam",
+        "iam-access-analyzer",
+        "identity-governance",
+        "platform-engineering",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T04:31:14Z",
+      "updated_at": "2026-06-10T04:31:17Z",
+      "created_at": "2026-05-27T00:04:40Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://aws.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "aws-guardduty-triage-board",
+      "description": "Operator surface for AWS GuardDuty detector and finding triage, credential abuse, runtime compromise, exfiltration signals, and response sequencing.",
+      "url": "https://github.com/mizcausevic-dev/aws-guardduty-triage-board",
+      "language": "TypeScript",
+      "topics": [
+        "aws",
+        "cloud-security",
+        "guardduty",
+        "incident-response",
+        "threat-detection",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T03:37:10Z",
+      "updated_at": "2026-06-10T03:37:15Z",
+      "created_at": "2026-05-27T02:15:04Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://guardduty.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "apple-device-trust-console",
+      "description": "Operator surface for Apple device trust, stale check-in drift, encryption posture, and remediation readiness across macOS, iOS, and iPadOS fleets.",
+      "url": "https://github.com/mizcausevic-dev/apple-device-trust-console",
+      "language": "TypeScript",
+      "topics": [
+        "apple",
+        "device-trust",
+        "endpoint-security",
+        "ios",
+        "ipados",
+        "macos",
+        "platform-engineering",
+        "security-operations",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T02:55:22Z",
+      "updated_at": "2026-06-10T02:53:22Z",
+      "created_at": "2026-05-27T23:29:04Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://apple.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "access-certification-api-dotnet",
+      "description": "C# / ASP.NET operator surface for privileged access certification routing and attestation posture.",
+      "url": "https://github.com/mizcausevic-dev/access-certification-api-dotnet",
+      "language": "C#",
+      "topics": [
+        "access-certification",
+        "csharp",
+        "dotnet",
+        "governance",
+        "iam",
+        "kinetic-gain",
+        "security"
+      ],
+      "pushed_at": "2026-06-10T02:16:00Z",
+      "updated_at": "2026-06-10T02:16:03Z",
+      "created_at": "2026-05-28T22:09:34Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://certs.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
     {
       "name": "platform-margin-leak-report",
       "description": "Board-ready executive intelligence surface for platform margin leakage.",
@@ -19,8 +235,8 @@
         "typescript",
         "vendor-overlap"
       ],
-      "pushed_at": "2026-06-10T01:18:37Z",
-      "updated_at": "2026-06-10T01:16:19Z",
+      "pushed_at": "2026-06-10T01:32:36Z",
+      "updated_at": "2026-06-10T01:32:40Z",
       "created_at": "2026-05-31T07:14:13Z",
       "stars": 0,
       "forks": 0,
@@ -28,6 +244,29 @@
       "fork": false,
       "homepage": "https://margin.kineticgain.com/",
       "license": "AGPL-3.0"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T01:19:40Z",
+      "updated_at": "2026-06-10T01:19:44Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
     },
     {
       "name": "aerospace-mission-readiness-board",
@@ -493,29 +732,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-09T18:57:04Z",
-      "updated_at": "2026-06-09T18:57:58Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
-    },
-    {
       "name": "diagnostic-qc-evidence-router",
       "description": "C# diagnostics QC evidence routing operator surface for biotech release-readiness workflows.",
       "url": "https://github.com/mizcausevic-dev/diagnostic-qc-evidence-router",
@@ -644,29 +860,6 @@
       "license": null
     },
     {
-      "name": "ai-brand-guardrails",
-      "description": "Board-ready Kinetic Gain surface for enforcing brand tone, factual posture, PII stripping, and approval readiness across AI-generated marketing content.",
-      "url": "https://github.com/mizcausevic-dev/ai-brand-guardrails",
-      "language": "TypeScript",
-      "topics": [
-        "ai-marketing",
-        "brand-ops",
-        "gtm-systems",
-        "kinetic-gain",
-        "policy-engine",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-09T16:23:49Z",
-      "updated_at": "2026-06-09T16:32:57Z",
-      "created_at": "2026-05-23T22:02:31Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "http://brand.kineticgain.com/",
-      "license": null
-    },
-    {
       "name": "content-ci-gatekeeper",
       "description": "Board-ready Kinetic Gain surface for release-gating CMS and markdown content before broken links, metadata drift, or redirect gaps hit production.",
       "url": "https://github.com/mizcausevic-dev/content-ci-gatekeeper",
@@ -792,33 +985,6 @@
       "archived": false,
       "fork": false,
       "homepage": "http://headless.kineticgain.com/",
-      "license": null
-    },
-    {
-      "name": "anomaly-log-hunter",
-      "description": "Access-log anomaly detection, source clustering, and traffic-forensics posture for growth and security teams.",
-      "url": "https://github.com/mizcausevic-dev/anomaly-log-hunter",
-      "language": "TypeScript",
-      "topics": [
-        "anomaly-detection",
-        "edge-security",
-        "express",
-        "growth-ops",
-        "growth-systems",
-        "kinetic-gain",
-        "log-analysis",
-        "revops",
-        "traffic-integrity",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-09T14:30:31Z",
-      "updated_at": "2026-06-09T14:32:14Z",
-      "created_at": "2026-05-17T20:55:49Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "http://anomaly.kineticgain.com/",
       "license": null
     },
     {
@@ -1331,30 +1497,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "board-cost-takeout-command-center",
-      "description": "Board-ready cost-takeout command center for sequencing savings owners, execution blockers, and takeout proof.",
-      "url": "https://github.com/mizcausevic-dev/board-cost-takeout-command-center",
-      "language": "TypeScript",
-      "topics": [
-        "board-cost-takeout",
-        "board-intelligence",
-        "cost-takeout",
-        "executive-intelligence",
-        "portfolio-governance",
-        "savings-owners",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-09T05:56:47Z",
-      "updated_at": "2026-06-09T05:56:51Z",
-      "created_at": "2026-06-01T03:56:12Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://takeout.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "board-growth-execution-drag",
       "description": "Board-ready growth execution drag surface for delivery friction, blocker accumulation, operating latency, and board-visible execution drag.",
       "url": "https://github.com/mizcausevic-dev/board-growth-execution-drag",
@@ -1377,6 +1519,30 @@
       "archived": false,
       "fork": false,
       "homepage": "https://drag.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-cost-takeout-command-center",
+      "description": "Board-ready cost-takeout command center for sequencing savings owners, execution blockers, and takeout proof.",
+      "url": "https://github.com/mizcausevic-dev/board-cost-takeout-command-center",
+      "language": "TypeScript",
+      "topics": [
+        "board-cost-takeout",
+        "board-intelligence",
+        "cost-takeout",
+        "executive-intelligence",
+        "portfolio-governance",
+        "savings-owners",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-09T05:56:47Z",
+      "updated_at": "2026-06-09T05:56:51Z",
+      "created_at": "2026-06-01T03:56:12Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://takeout.kineticgain.com",
       "license": "AGPL-3.0"
     },
     {
@@ -1936,29 +2102,6 @@
       "archived": false,
       "fork": false,
       "homepage": null,
-      "license": "NOASSERTION"
-    },
-    {
-      "name": "bigquery-query-risk-profiler",
-      "description": "Operator surface for BigQuery query risk, slot pressure, SQL cost exposure, and remediation routing across data engineering estates.",
-      "url": "https://github.com/mizcausevic-dev/bigquery-query-risk-profiler",
-      "language": "TypeScript",
-      "topics": [
-        "bigquery",
-        "cost-governance",
-        "data-engineering",
-        "kinetic-gain",
-        "operator-console",
-        "sql"
-      ],
-      "pushed_at": "2026-06-09T01:08:10Z",
-      "updated_at": "2026-06-09T01:08:14Z",
-      "created_at": "2026-06-06T23:32:25Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://mizcausevic-dev.github.io/bigquery-query-risk-profiler/",
       "license": "NOASSERTION"
     },
     {
@@ -6077,29 +6220,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "azure-landing-zone-drift-radar",
-      "description": "Azure landing-zone drift radar for policy inheritance gaps, owner-role drift, perimeter exposure, diagnostics coverage, and Defender posture.",
-      "url": "https://github.com/mizcausevic-dev/azure-landing-zone-drift-radar",
-      "language": "TypeScript",
-      "topics": [
-        "azure",
-        "cloud-security",
-        "landing-zones",
-        "management-groups",
-        "platform-engineering",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T05:03:20Z",
-      "updated_at": "2026-05-27T01:09:29Z",
-      "created_at": "2026-05-27T01:09:06Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://zone.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "powerbi-executive-metric-trust-pack",
       "description": "Dedicated Kinetic Gain proof repo for Power BI platform and company signal coverage. Synthetic board-ready evidence, CLI summary, static report, and CI gate.",
       "url": "https://github.com/mizcausevic-dev/powerbi-executive-metric-trust-pack",
@@ -9834,29 +9954,6 @@
       "license": null
     },
     {
-      "name": "aws-guardduty-triage-board",
-      "description": "Operator surface for AWS GuardDuty detector and finding triage, credential abuse, runtime compromise, exfiltration signals, and response sequencing.",
-      "url": "https://github.com/mizcausevic-dev/aws-guardduty-triage-board",
-      "language": "TypeScript",
-      "topics": [
-        "aws",
-        "cloud-security",
-        "guardduty",
-        "incident-response",
-        "threat-detection",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-04T01:00:10Z",
-      "updated_at": "2026-06-04T16:35:44Z",
-      "created_at": "2026-05-27T02:15:04Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://guardduty.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "otel-genai-test-vectors",
       "description": "Curated OTel GenAI conformance corpus — categorized OTLP/JSON fixtures (valid / dirty / shape) with declarative manifest. Drop-in regression target for any GenAI consumer: validators, exporters, rollups, dashboards.",
       "url": "https://github.com/mizcausevic-dev/otel-genai-test-vectors",
@@ -10883,103 +10980,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://process.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "bigquery-query-cost-watch",
-      "description": "BigQuery operator surface for query-cost governance, slot pressure, attribution hygiene, and optimization sequencing.",
-      "url": "https://github.com/mizcausevic-dev/bigquery-query-cost-watch",
-      "language": "TypeScript",
-      "topics": [
-        "bigquery",
-        "data-platform",
-        "finops",
-        "google-cloud",
-        "query-governance",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-01T14:25:27Z",
-      "updated_at": "2026-06-01T14:52:57Z",
-      "created_at": "2026-05-28T01:21:59Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://bigquery.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "aws-iam-access-analyzer-console",
-      "description": "Operator surface for AWS IAM Access Analyzer posture, public access, cross-account trust, and remediation sequencing.",
-      "url": "https://github.com/mizcausevic-dev/aws-iam-access-analyzer-console",
-      "language": "TypeScript",
-      "topics": [
-        "aws",
-        "cloud-security",
-        "iam",
-        "iam-access-analyzer",
-        "identity-governance",
-        "platform-engineering",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-01T14:25:23Z",
-      "updated_at": "2026-06-01T14:54:23Z",
-      "created_at": "2026-05-27T00:04:40Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://aws.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "apple-device-trust-console",
-      "description": "Operator surface for Apple device trust, stale check-in drift, encryption posture, and remediation readiness across macOS, iOS, and iPadOS fleets.",
-      "url": "https://github.com/mizcausevic-dev/apple-device-trust-console",
-      "language": "TypeScript",
-      "topics": [
-        "apple",
-        "device-trust",
-        "endpoint-security",
-        "ios",
-        "ipados",
-        "macos",
-        "platform-engineering",
-        "security-operations",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-01T14:25:20Z",
-      "updated_at": "2026-06-01T14:47:16Z",
-      "created_at": "2026-05-27T23:29:04Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://apple.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "access-certification-api-dotnet",
-      "description": "C# / ASP.NET operator surface for privileged access certification routing and attestation posture.",
-      "url": "https://github.com/mizcausevic-dev/access-certification-api-dotnet",
-      "language": "C#",
-      "topics": [
-        "access-certification",
-        "csharp",
-        "dotnet",
-        "governance",
-        "iam",
-        "kinetic-gain",
-        "security"
-      ],
-      "pushed_at": "2026-06-01T14:25:18Z",
-      "updated_at": "2026-06-01T14:47:53Z",
-      "created_at": "2026-05-28T22:09:34Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://certs.kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
