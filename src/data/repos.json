@@ -1,8 +1,274 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-10T07:46:57.301Z",
+  "generated_at": "2026-06-10T13:29:00.736Z",
   "total": 721,
   "repos": [
+    {
+      "name": "board-decision-escalation-map",
+      "description": "Board-ready escalation-mapping surface for committee handoffs, owner drift, decision reroutes, and board-visible intervention paths.",
+      "url": "https://github.com/mizcausevic-dev/board-decision-escalation-map",
+      "language": "TypeScript",
+      "topics": [
+        "board-intelligence",
+        "committee-handoffs",
+        "decision-escalation",
+        "executive-intelligence",
+        "intervention-paths",
+        "owner-drift",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T13:28:19Z",
+      "updated_at": "2026-06-10T13:27:49Z",
+      "created_at": "2026-06-01T13:04:28Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://escalate-map.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-decision-chain-integrity-brief",
+      "description": "Board-ready chain-integrity brief for tracking where decision paths fracture, escalation gaps widen, and board confidence weakens across AI, platform, revenue, FinTech, procurement, and biotech lanes.",
+      "url": "https://github.com/mizcausevic-dev/board-decision-chain-integrity-brief",
+      "language": "TypeScript",
+      "topics": [
+        "board-intelligence",
+        "board-risk",
+        "chain-integrity",
+        "decision-chain",
+        "executive-intelligence",
+        "governance",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T12:33:04Z",
+      "updated_at": "2026-06-10T12:33:09Z",
+      "created_at": "2026-06-01T16:12:52Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://integrity.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-decision-accountability-ledger",
+      "description": "Board-ready accountability-ledger surface for tracking final decision owners, override continuity, and board-safe ownership discipline.",
+      "url": "https://github.com/mizcausevic-dev/board-decision-accountability-ledger",
+      "language": "TypeScript",
+      "topics": [
+        "accountability-ledger",
+        "board-intelligence",
+        "board-operations",
+        "decision-accountability",
+        "executive-intelligence",
+        "override-discipline",
+        "owner-of-record",
+        "ownership-gaps",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T12:11:06Z",
+      "updated_at": "2026-06-10T12:09:09Z",
+      "created_at": "2026-06-01T14:40:28Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://accountability.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-cost-takeout-command-center",
+      "description": "Board-ready cost-takeout command center for sequencing savings owners, execution blockers, and takeout proof.",
+      "url": "https://github.com/mizcausevic-dev/board-cost-takeout-command-center",
+      "language": "TypeScript",
+      "topics": [
+        "board-cost-takeout",
+        "board-intelligence",
+        "cost-takeout",
+        "executive-intelligence",
+        "portfolio-governance",
+        "savings-owners",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T11:02:14Z",
+      "updated_at": "2026-06-10T11:02:18Z",
+      "created_at": "2026-06-01T03:56:12Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://takeout.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-committee-throughput-scorecard",
+      "description": "Board-ready committee-throughput surface for agenda load, decision slots, escalation turnover, and meeting-capacity tradeoffs.",
+      "url": "https://github.com/mizcausevic-dev/board-committee-throughput-scorecard",
+      "language": "TypeScript",
+      "topics": [
+        "agenda-load",
+        "board-committee-throughput-scorecard",
+        "board-intelligence",
+        "committee-throughput",
+        "decision-slots",
+        "executive-intelligence",
+        "meeting-capacity",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T10:46:48Z",
+      "updated_at": "2026-06-10T10:44:14Z",
+      "created_at": "2026-06-01T12:11:58Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://throughput.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "azure-landing-zone-drift-radar",
+      "description": "Azure landing-zone drift radar for policy inheritance gaps, owner-role drift, perimeter exposure, diagnostics coverage, and Defender posture.",
+      "url": "https://github.com/mizcausevic-dev/azure-landing-zone-drift-radar",
+      "language": "TypeScript",
+      "topics": [
+        "azure",
+        "cloud-security",
+        "landing-zones",
+        "management-groups",
+        "platform-engineering",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T10:06:48Z",
+      "updated_at": "2026-06-10T05:21:29Z",
+      "created_at": "2026-05-27T01:09:06Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://zone.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-cash-preservation-playbook",
+      "description": "Board-ready cash-preservation playbook for freezing spend, ring-fencing core systems, and sequencing downside containment.",
+      "url": "https://github.com/mizcausevic-dev/board-cash-preservation-playbook",
+      "language": "TypeScript",
+      "topics": [
+        "board-cash-preservation",
+        "board-intelligence",
+        "cash-preservation",
+        "downside-containment",
+        "executive-intelligence",
+        "portfolio-governance",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T09:58:21Z",
+      "updated_at": "2026-06-10T09:55:41Z",
+      "created_at": "2026-06-01T03:13:39Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://preserve.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "board-capital-reallocation-brief",
+      "description": "Board-ready capital-reallocation brief for sequencing trims, protections, and reinvestment moves across the executive estate.",
+      "url": "https://github.com/mizcausevic-dev/board-capital-reallocation-brief",
+      "language": "TypeScript",
+      "topics": [
+        "board-capital-reallocation",
+        "board-intelligence",
+        "capital-allocation",
+        "capital-reallocation",
+        "executive-intelligence",
+        "investment-priority",
+        "portfolio-governance",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T09:00:17Z",
+      "updated_at": "2026-06-10T08:58:11Z",
+      "created_at": "2026-06-01T02:33:39Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://reallocate.kineticgain.com",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "backup-restore-drill-runner",
+      "description": "Bash-native operator surface for backup drills, restore timing, and recovery evidence posture.",
+      "url": "https://github.com/mizcausevic-dev/backup-restore-drill-runner",
+      "language": "Shell",
+      "topics": [
+        "backup",
+        "bash",
+        "disaster-recovery",
+        "kinetic-gain",
+        "operator-surface"
+      ],
+      "pushed_at": "2026-06-10T08:21:45Z",
+      "updated_at": "2026-06-10T08:22:02Z",
+      "created_at": "2026-05-29T00:38:15Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://backup.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
+    {
+      "name": "b2b-viral-waitlist",
+      "description": "Board-ready Kinetic Gain surface for referral-driven B2B waitlists, cohort pacing, and activation-aware growth loops.",
+      "url": "https://github.com/mizcausevic-dev/b2b-viral-waitlist",
+      "language": "TypeScript",
+      "topics": [
+        "b2b-growth",
+        "demand-generation",
+        "growth-engineering",
+        "kinetic-gain",
+        "launch-ops",
+        "referral-marketing",
+        "revops",
+        "typescript",
+        "waitlist"
+      ],
+      "pushed_at": "2026-06-10T08:00:33Z",
+      "updated_at": "2026-06-10T08:01:32Z",
+      "created_at": "2026-05-24T20:02:39Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "http://waitlist.kineticgain.com/",
+      "license": null
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-10T07:46:58Z",
+      "updated_at": "2026-06-10T07:47:02Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "anomaly-log-hunter",
       "description": "Access-log anomaly detection, source clustering, and traffic-forensics posture for growth and security teams.",
@@ -97,29 +363,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://bigquery.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "azure-landing-zone-drift-radar",
-      "description": "Azure landing-zone drift radar for policy inheritance gaps, owner-role drift, perimeter exposure, diagnostics coverage, and Defender posture.",
-      "url": "https://github.com/mizcausevic-dev/azure-landing-zone-drift-radar",
-      "language": "TypeScript",
-      "topics": [
-        "azure",
-        "cloud-security",
-        "landing-zones",
-        "management-groups",
-        "platform-engineering",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-10T05:21:27Z",
-      "updated_at": "2026-06-10T05:21:29Z",
-      "created_at": "2026-05-27T01:09:06Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://zone.kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
@@ -244,29 +487,6 @@
       "fork": false,
       "homepage": "https://margin.kineticgain.com/",
       "license": "AGPL-3.0"
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-10T01:19:40Z",
-      "updated_at": "2026-06-10T01:19:44Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "aerospace-mission-readiness-board",
@@ -1016,32 +1236,6 @@
       "license": null
     },
     {
-      "name": "b2b-viral-waitlist",
-      "description": "Board-ready Kinetic Gain surface for referral-driven B2B waitlists, cohort pacing, and activation-aware growth loops.",
-      "url": "https://github.com/mizcausevic-dev/b2b-viral-waitlist",
-      "language": "TypeScript",
-      "topics": [
-        "b2b-growth",
-        "demand-generation",
-        "growth-engineering",
-        "kinetic-gain",
-        "launch-ops",
-        "referral-marketing",
-        "revops",
-        "typescript",
-        "waitlist"
-      ],
-      "pushed_at": "2026-06-09T13:34:19Z",
-      "updated_at": "2026-06-09T13:40:44Z",
-      "created_at": "2026-05-24T20:02:39Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "http://waitlist.kineticgain.com/",
-      "license": null
-    },
-    {
       "name": "event-driven-nurture",
       "description": "Board-ready Kinetic Gain surface for event-driven nurture sequencing, conversion pacing, and activation-aware follow-up loops.",
       "url": "https://github.com/mizcausevic-dev/event-driven-nurture",
@@ -1519,30 +1713,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://drag.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "board-cost-takeout-command-center",
-      "description": "Board-ready cost-takeout command center for sequencing savings owners, execution blockers, and takeout proof.",
-      "url": "https://github.com/mizcausevic-dev/board-cost-takeout-command-center",
-      "language": "TypeScript",
-      "topics": [
-        "board-cost-takeout",
-        "board-intelligence",
-        "cost-takeout",
-        "executive-intelligence",
-        "portfolio-governance",
-        "savings-owners",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-09T05:56:47Z",
-      "updated_at": "2026-06-09T05:56:51Z",
-      "created_at": "2026-06-01T03:56:12Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://takeout.kineticgain.com",
       "license": "AGPL-3.0"
     },
     {
@@ -3928,30 +4098,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "board-decision-escalation-map",
-      "description": "Board-ready escalation-mapping surface for committee handoffs, owner drift, decision reroutes, and board-visible intervention paths.",
-      "url": "https://github.com/mizcausevic-dev/board-decision-escalation-map",
-      "language": "TypeScript",
-      "topics": [
-        "board-intelligence",
-        "committee-handoffs",
-        "decision-escalation",
-        "executive-intelligence",
-        "intervention-paths",
-        "owner-drift",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:38:37Z",
-      "updated_at": "2026-06-04T16:35:39Z",
-      "created_at": "2026-06-01T13:04:28Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://escalate-map.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "portfolio-benchmark-waterfall",
       "description": "Board-ready intelligence layer that ranks exposure, savings, investment priority, and peer-relative position across the Kinetic Gain estate.",
       "url": "https://github.com/mizcausevic-dev/portfolio-benchmark-waterfall",
@@ -4222,31 +4368,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "board-committee-throughput-scorecard",
-      "description": "Board-ready committee-throughput surface for agenda load, decision slots, escalation turnover, and meeting-capacity tradeoffs.",
-      "url": "https://github.com/mizcausevic-dev/board-committee-throughput-scorecard",
-      "language": "TypeScript",
-      "topics": [
-        "agenda-load",
-        "board-committee-throughput-scorecard",
-        "board-intelligence",
-        "committee-throughput",
-        "decision-slots",
-        "executive-intelligence",
-        "meeting-capacity",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:37:18Z",
-      "updated_at": "2026-06-04T16:36:11Z",
-      "created_at": "2026-06-01T12:11:58Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://throughput.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "vertical-benchmark-comparator",
       "description": "Board-ready executive intelligence surface for comparing vertical operating lanes, benchmark posture, and investment-readiness tradeoffs side by side.",
       "url": "https://github.com/mizcausevic-dev/vertical-benchmark-comparator",
@@ -4318,32 +4439,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://expansion.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "board-decision-accountability-ledger",
-      "description": "Board-ready accountability-ledger surface for tracking final decision owners, override continuity, and board-safe ownership discipline.",
-      "url": "https://github.com/mizcausevic-dev/board-decision-accountability-ledger",
-      "language": "TypeScript",
-      "topics": [
-        "accountability-ledger",
-        "board-intelligence",
-        "board-operations",
-        "decision-accountability",
-        "executive-intelligence",
-        "override-discipline",
-        "owner-of-record",
-        "ownership-gaps",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:36:37Z",
-      "updated_at": "2026-06-04T16:35:15Z",
-      "created_at": "2026-06-01T14:40:28Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://accountability.kineticgain.com",
       "license": "AGPL-3.0"
     },
     {
@@ -4419,30 +4514,6 @@
       "license": "AGPL-3.0"
     },
     {
-      "name": "board-decision-chain-integrity-brief",
-      "description": "Board-ready chain-integrity brief for tracking where decision paths fracture, escalation gaps widen, and board confidence weakens across AI, platform, revenue, FinTech, procurement, and biotech lanes.",
-      "url": "https://github.com/mizcausevic-dev/board-decision-chain-integrity-brief",
-      "language": "TypeScript",
-      "topics": [
-        "board-intelligence",
-        "board-risk",
-        "chain-integrity",
-        "decision-chain",
-        "executive-intelligence",
-        "governance",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:36:14Z",
-      "updated_at": "2026-06-04T16:35:49Z",
-      "created_at": "2026-06-01T16:12:52Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://integrity.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
       "name": "mizcausevic-dev",
       "description": "Two decades leading enterprise web platforms and digital ecosystems. Hands-on technical capability, AI curiosity, builder/operator mentality. I bridge the gap between complex enterprise data and the GenAI agents that consume it, ensuring brand integrity, security, and market dominance in the post-search era. ",
       "url": "https://github.com/mizcausevic-dev/mizcausevic-dev",
@@ -4460,31 +4531,6 @@
       "fork": false,
       "homepage": "https://mizcausevic.com/skills/",
       "license": null
-    },
-    {
-      "name": "board-capital-reallocation-brief",
-      "description": "Board-ready capital-reallocation brief for sequencing trims, protections, and reinvestment moves across the executive estate.",
-      "url": "https://github.com/mizcausevic-dev/board-capital-reallocation-brief",
-      "language": "TypeScript",
-      "topics": [
-        "board-capital-reallocation",
-        "board-intelligence",
-        "capital-allocation",
-        "capital-reallocation",
-        "executive-intelligence",
-        "investment-priority",
-        "portfolio-governance",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:35:45Z",
-      "updated_at": "2026-06-04T16:35:59Z",
-      "created_at": "2026-06-01T02:33:39Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://reallocate.kineticgain.com",
-      "license": "AGPL-3.0"
     },
     {
       "name": "mizcausevic-dev.github.io",
@@ -4637,30 +4683,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://scenario.kineticgain.com",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "board-cash-preservation-playbook",
-      "description": "Board-ready cash-preservation playbook for freezing spend, ring-fencing core systems, and sequencing downside containment.",
-      "url": "https://github.com/mizcausevic-dev/board-cash-preservation-playbook",
-      "language": "TypeScript",
-      "topics": [
-        "board-cash-preservation",
-        "board-intelligence",
-        "cash-preservation",
-        "downside-containment",
-        "executive-intelligence",
-        "portfolio-governance",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-08T11:35:14Z",
-      "updated_at": "2026-06-04T16:35:56Z",
-      "created_at": "2026-06-01T03:13:39Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://preserve.kineticgain.com",
       "license": "AGPL-3.0"
     },
     {
@@ -7669,28 +7691,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://runbook.kineticgain.com/",
-      "license": "NOASSERTION"
-    },
-    {
-      "name": "backup-restore-drill-runner",
-      "description": "Bash-native operator surface for backup drills, restore timing, and recovery evidence posture.",
-      "url": "https://github.com/mizcausevic-dev/backup-restore-drill-runner",
-      "language": "Shell",
-      "topics": [
-        "backup",
-        "bash",
-        "disaster-recovery",
-        "kinetic-gain",
-        "operator-surface"
-      ],
-      "pushed_at": "2026-06-05T21:24:27Z",
-      "updated_at": "2026-06-05T21:23:52Z",
-      "created_at": "2026-05-29T00:38:15Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://backup.kineticgain.com/",
       "license": "NOASSERTION"
     },
     {
