@@ -1,8 +1,77 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-11T01:21:32.680Z",
+  "generated_at": "2026-06-11T07:59:13.754Z",
   "total": 721,
   "repos": [
+    {
+      "name": "editorial-standards-approval-desk",
+      "description": "Media/publishing operator surface for editorial standards routing, copy-policy blockers, and approval-safe launch posture.",
+      "url": "https://github.com/mizcausevic-dev/editorial-standards-approval-desk",
+      "language": "TypeScript",
+      "topics": [
+        "approval-workflows",
+        "brand-standards",
+        "content-governance",
+        "editorial-operations",
+        "media-publishing",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-11T06:06:59Z",
+      "updated_at": "2026-06-01T14:52:22Z",
+      "created_at": "2026-05-28T05:49:05Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://editorial.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "bigquery-query-cost-watch",
+      "description": "BigQuery operator surface for query-cost governance, slot pressure, attribution hygiene, and optimization sequencing.",
+      "url": "https://github.com/mizcausevic-dev/bigquery-query-cost-watch",
+      "language": "TypeScript",
+      "topics": [
+        "bigquery",
+        "data-platform",
+        "finops",
+        "google-cloud",
+        "query-governance",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-11T04:44:50Z",
+      "updated_at": "2026-06-10T06:26:16Z",
+      "created_at": "2026-05-28T01:21:59Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://bigquery.kineticgain.com/",
+      "license": "AGPL-3.0"
+    },
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-11T01:21:33Z",
+      "updated_at": "2026-06-11T01:21:37Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "boardroom-sparring-partner",
       "description": "Board-prep intelligence surface for executive questions, pushback rehearsal, memo posture, and investor-facing readiness. Library + CLI.",
@@ -4553,29 +4622,6 @@
       "license": null
     },
     {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-10T21:11:54Z",
-      "updated_at": "2026-06-10T21:11:58Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
-    },
-    {
       "name": "board-decision-bottleneck-heatmap",
       "description": "Board-ready executive intelligence surface for exposing board-decision bottlenecks, review drag clusters, and owner concentration across the Kinetic Gain suite.",
       "url": "https://github.com/mizcausevic-dev/board-decision-bottleneck-heatmap",
@@ -4721,29 +4767,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://zone.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "bigquery-query-cost-watch",
-      "description": "BigQuery operator surface for query-cost governance, slot pressure, attribution hygiene, and optimization sequencing.",
-      "url": "https://github.com/mizcausevic-dev/bigquery-query-cost-watch",
-      "language": "TypeScript",
-      "topics": [
-        "bigquery",
-        "data-platform",
-        "finops",
-        "google-cloud",
-        "query-governance",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-10T06:26:12Z",
-      "updated_at": "2026-06-10T06:26:16Z",
-      "created_at": "2026-05-28T01:21:59Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://bigquery.kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
@@ -9826,29 +9849,6 @@
       "archived": false,
       "fork": false,
       "homepage": "https://rights.kineticgain.com/",
-      "license": "AGPL-3.0"
-    },
-    {
-      "name": "editorial-standards-approval-desk",
-      "description": "Media/publishing operator surface for editorial standards routing, copy-policy blockers, and approval-safe launch posture.",
-      "url": "https://github.com/mizcausevic-dev/editorial-standards-approval-desk",
-      "language": "TypeScript",
-      "topics": [
-        "approval-workflows",
-        "brand-standards",
-        "content-governance",
-        "editorial-operations",
-        "media-publishing",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-04T06:06:37Z",
-      "updated_at": "2026-06-01T14:52:22Z",
-      "created_at": "2026-05-28T05:49:05Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://editorial.kineticgain.com/",
       "license": "AGPL-3.0"
     },
     {
