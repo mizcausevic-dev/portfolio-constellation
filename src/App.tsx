@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { ClusterShowcase } from "./components/ClusterShowcase";
+import { FeaturedTier } from "./components/FeaturedTier";
 import { Hero } from "./components/Hero";
 import { IndustryAtlas } from "./components/IndustryAtlas";
+import { JsonLd } from "./components/JsonLd";
 import { LanguageAtlas } from "./components/LanguageAtlas";
 import { RepoGrid } from "./components/RepoGrid";
 import { StatusBar } from "./components/StatusBar";
@@ -13,6 +15,8 @@ import {
   signalStats,
   verticalStats,
 } from "./lib/aggregate";
+import { isFeatured } from "./lib/classifier";
+import { cleanedRepos } from "./lib/curate";
 import { bakedSnapshot, fetchLiveSnapshot } from "./lib/data";
 import type { Snapshot } from "./lib/types";
 
@@ -30,8 +34,8 @@ export default function App() {
   const [filters, setFilters] = useState<FilterState>(INITIAL_FILTERS);
 
   // Fire a live re-fetch after first paint so the dashboard upgrades when
-  // newer-than-snapshot data is reachable. Silent fail keeps the baked
-  // snapshot in place when the API is unreachable.
+  // newer-than-snapshot data is reachable. Skipped during SSR (no effects), so
+  // the prerender captures the baked snapshot. Silent fail keeps the baked data.
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -44,26 +48,35 @@ export default function App() {
     return () => {
       cancelled = true;
     };
-    // We only want this to fire once on mount with the original baked user.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const ov = useMemo(() => overview(snapshot.repos), [snapshot]);
-  const langs = useMemo(() => languageStats(snapshot.repos), [snapshot]);
-  const clusters = useMemo(() => clusterStats(snapshot.repos), [snapshot]);
-  const verticals = useMemo(() => verticalStats(snapshot.repos), [snapshot]);
-  const signals = useMemo(() => signalStats(snapshot.repos), [snapshot]);
+  // ONE cleaned set (lib/curate: !fork && !archived && substance) drives every
+  // count and the whole render, so hero == featured + grid == cleaned can't drift.
+  const cleaned = useMemo(() => cleanedRepos(snapshot.repos), [snapshot]);
+  const featured = useMemo(() => cleaned.filter(isFeatured), [cleaned]);
+  const gridRepos = useMemo(() => cleaned.filter((r) => !isFeatured(r)), [cleaned]);
+
+  const ov = useMemo(() => overview(cleaned), [cleaned]);
+  const langs = useMemo(() => languageStats(cleaned), [cleaned]);
+  const clusters = useMemo(() => clusterStats(cleaned), [cleaned]);
+  const verticals = useMemo(() => verticalStats(cleaned), [cleaned]);
+  const signals = useMemo(() => signalStats(cleaned), [cleaned]);
 
   return (
     <div className="app-root">
+      <JsonLd repos={cleaned} />
       <Hero
         overview={ov}
+        tracked={snapshot.repos.length}
         generatedAt={snapshot.generated_at}
         user={snapshot.user}
         liveRefreshed={liveRefreshed}
       />
 
       <main className="page">
+        <FeaturedTier repos={featured} />
+
         <ClusterShowcase
           clusters={clusters}
           onSelect={(cluster) => setFilters({ ...INITIAL_FILTERS, cluster })}
@@ -82,10 +95,10 @@ export default function App() {
           />
         </div>
 
-        <RepoGrid repos={snapshot.repos} filters={filters} onFilters={setFilters} />
+        <RepoGrid repos={gridRepos} filters={filters} onFilters={setFilters} />
       </main>
 
-      <StatusBar total={snapshot.total} generatedAt={snapshot.generated_at} liveRefreshed={liveRefreshed} />
+      <StatusBar total={snapshot.repos.length} generatedAt={snapshot.generated_at} liveRefreshed={liveRefreshed} />
     </div>
   );
 }

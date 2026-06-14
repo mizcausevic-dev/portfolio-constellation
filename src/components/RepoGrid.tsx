@@ -1,6 +1,4 @@
-import { useMemo, useRef } from "react";
-import { useEffect } from "react";
-import { motion } from "motion/react";
+import { useEffect, useMemo, useRef } from "react";
 import { Filters, type FilterState } from "./Filters";
 import { RepoCard } from "./RepoCard";
 import { clustersFor, freshness, verticalsFor } from "../lib/classifier";
@@ -14,16 +12,20 @@ interface Props {
 }
 
 /**
- * The full filterable grid. Filters at the top, virtualised-friendly grid
- * below. Externalises filter state so other components (cluster cards,
- * language atlas bars, vertical chips) can drive it.
+ * The full filterable grid. Filters at the top; grid below.
  *
- * When filters change, scrolls the grid into view so the user understands
- * a filter took effect even when the trigger was far up the page.
+ * Hide-not-remove: EVERY repo is always rendered into the DOM (so the
+ * prerendered static HTML contains all of them for crawlers); a non-matching
+ * repo gets `.repo-card-hidden` (display:none) rather than being dropped from
+ * the render. The count reflects how many are currently visible.
  */
 export function RepoGrid({ repos, filters, onFilters }: Props) {
   const langs = useMemo(() => languageStats(repos).map((l) => l.language), [repos]);
-  const filtered = useMemo(() => applyFilters(repos, filters), [repos, filters]);
+  const decided = useMemo(
+    () => repos.map((r) => ({ repo: r, visible: matches(r, filters) })),
+    [repos, filters],
+  );
+  const visibleCount = decided.reduce((n, d) => n + (d.visible ? 1 : 0), 0);
 
   const anchorRef = useRef<HTMLDivElement | null>(null);
   const lastFilterRef = useRef<FilterState>(filters);
@@ -45,85 +47,63 @@ export function RepoGrid({ repos, filters, onFilters }: Props) {
       <div className="section-head">
         <h2>Every repo</h2>
         <p>
-          Filterable atlas of every public repo in the live GitHub snapshot. Search by name / description / topic, or
-          drill into a single platform, vertical, language, or freshness window.
+          Filterable atlas of every substantive public repo in the live GitHub snapshot. Search by
+          name / description / topic, or drill into a platform, vertical, language, or freshness
+          window. All repos stay in the page source for crawlers; filters only hide.
         </p>
       </div>
       <Filters
         state={filters}
         onChange={onFilters}
         languages={langs}
-        filteredCount={filtered.length}
+        filteredCount={visibleCount}
         totalCount={repos.length}
       />
-      <motion.div
-        className="repo-grid"
-        layout
-        transition={{ layout: { duration: 0.25 } }}
-      >
-        {filtered.length === 0 ? (
-          <div className="repo-grid-empty">
-            No repos match the current filters. Try{" "}
-            <button
-              type="button"
-              className="filters-clear filters-clear-inline"
-              onClick={() =>
-                onFilters({ query: "", cluster: "all", vertical: "all", language: "all", freshness: "all" })
-              }
-            >
-              clearing
-            </button>
-            .
+      {visibleCount === 0 && (
+        <div className="repo-grid-empty">
+          No repos match the current filters. Try{" "}
+          <button
+            type="button"
+            className="filters-clear filters-clear-inline"
+            onClick={() =>
+              onFilters({ query: "", cluster: "all", vertical: "all", language: "all", freshness: "all" })
+            }
+          >
+            clearing
+          </button>
+          .
+        </div>
+      )}
+      <div className="repo-grid">
+        {decided.map(({ repo, visible }) => (
+          <div
+            key={repo.name}
+            className={visible ? "repo-grid-item" : "repo-grid-item repo-card-hidden"}
+            aria-hidden={visible ? undefined : true}
+          >
+            <RepoCard repo={repo} />
           </div>
-        ) : (
-          filtered.map((repo) => (
-            <motion.div
-              key={repo.name}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.2 }}
-            >
-              <RepoCard repo={repo} />
-            </motion.div>
-          ))
-        )}
-      </motion.div>
+        ))}
+      </div>
     </section>
   );
 }
 
-function applyFilters(repos: readonly Repo[], f: FilterState): Repo[] {
+function matches(r: Repo, f: FilterState): boolean {
   const q = f.query.trim().toLowerCase();
-  const out: Repo[] = [];
-  for (const r of repos) {
-    if (q) {
-      const blob = (
-        r.name +
-        " " +
-        r.description +
-        " " +
-        r.topics.join(" ") +
-        " " +
-        (r.language ?? "")
-      ).toLowerCase();
-      if (!blob.includes(q)) continue;
-    }
-    if (f.cluster !== "all") {
-      if (!clustersFor(r).includes(f.cluster)) continue;
-    }
-    if (f.vertical !== "all") {
-      if (!verticalsFor(r).includes(f.vertical)) continue;
-    }
-    if (f.language !== "all") {
-      if (r.language !== f.language) continue;
-    }
-    if (f.freshness !== "all") {
-      const fr = freshness(r);
-      if (f.freshness === "live" && fr !== "live") continue;
-      if (f.freshness === "active" && fr !== "live" && fr !== "active") continue;
-    }
-    out.push(r);
+  if (q) {
+    const blob = (
+      r.name + " " + r.description + " " + r.topics.join(" ") + " " + (r.language ?? "")
+    ).toLowerCase();
+    if (!blob.includes(q)) return false;
   }
-  return out;
+  if (f.cluster !== "all" && !clustersFor(r).includes(f.cluster)) return false;
+  if (f.vertical !== "all" && !verticalsFor(r).includes(f.vertical)) return false;
+  if (f.language !== "all" && r.language !== f.language) return false;
+  if (f.freshness !== "all") {
+    const fr = freshness(r);
+    if (f.freshness === "live" && fr !== "live") return false;
+    if (f.freshness === "active" && fr !== "live" && fr !== "active") return false;
+  }
+  return true;
 }

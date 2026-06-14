@@ -4,6 +4,7 @@ import { CLUSTERS, VERTICALS, type Repo } from "../lib/types";
 
 interface Props {
   repo: Repo;
+  featured?: boolean;
 }
 
 /**
@@ -11,7 +12,7 @@ interface Props {
  * chips, top topics, freshness dim, archived badge, license. Click anywhere
  * navigates to the GitHub URL.
  */
-export function RepoCard({ repo }: Props) {
+export function RepoCard({ repo, featured = false }: Props) {
   const fresh = freshness(repo);
   const clusters = clustersFor(repo).slice(0, 2);
   const verticals = verticalsFor(repo).slice(0, 3);
@@ -22,8 +23,10 @@ export function RepoCard({ repo }: Props) {
       href={repo.url}
       target="_blank"
       rel="noreferrer"
-      className={`repo-card freshness-${fresh}`}
+      data-repo-card={featured ? "featured" : "grid"}
+      className={`repo-card freshness-${fresh}${featured ? " repo-card-featured" : ""}`}
       title={`pushed ${relative(repo.pushed_at)}`}
+      suppressHydrationWarning
     >
       <div className="repo-card-head">
         <span className="repo-card-name">{repo.name}</span>
@@ -70,7 +73,7 @@ export function RepoCard({ repo }: Props) {
             <GitFork className="icon-xs" /> {repo.forks}
           </span>
         )}
-        <span className="repo-card-when">{relative(repo.pushed_at)}</span>
+        <span className="repo-card-when" suppressHydrationWarning>{relative(repo.pushed_at)}</span>
         {repo.archived && (
           <span className="repo-card-archived">
             <Archive className="icon-xs" /> archived

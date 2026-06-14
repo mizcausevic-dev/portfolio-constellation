@@ -1,0 +1,51 @@
+/* Command Center additions: featured tier, category chips, hide-not-remove, transparency stat.
+   Kept in a separate file so the large base styles.css is untouched. */
+
+/* hide-not-remove: filtered cards stay in the DOM (crawlable), just visually hidden */
+.repo-card-hidden { display: none !important; }
+.repo-grid-item { content-visibility: auto; contain-intrinsic-size: 0 240px; }
+
+/* featured tier */
+.featured-tier { margin: 2.5rem 0; }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.repo-card-featured {
+  border-color: rgba(34, 211, 238, 0.55) !important;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 8px 30px rgba(34, 211, 238, 0.08);
+  position: relative;
+}
+.repo-card-featured::after {
+  content: "verifiable";
+  position: absolute; top: 10px; right: 12px;
+  font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: #22d3ee; opacity: 0.85;
+}
+
+/* category chips (replace the cluster + vertical selects) */
+.filters-chip-group { margin-top: 0.6rem; }
+.filters-chip-group-label {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
+  opacity: 0.55; margin-bottom: 0.35rem;
+}
+.filters-chip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.filters-chip {
+  font: inherit; font-size: 0.78rem; line-height: 1.2;
+  padding: 0.28rem 0.7rem; border-radius: 999px;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  color: inherit; cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.filters-chip:hover { background: rgba(148, 163, 184, 0.16); }
+.filters-chip[aria-pressed="true"] {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: rgba(16, 185, 129, 0.6);
+  color: #34d399;
+}
+
+/* transparency stat */
+.hero-tracked { font-size: 0.82rem; opacity: 0.6; margin-top: 0.45rem; }
+.hero-stat.tone-muted { opacity: 0.62; }

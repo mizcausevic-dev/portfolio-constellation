@@ -18,9 +18,13 @@ interface Props {
   totalCount: number;
 }
 
+const CLUSTER_IDS = Object.keys(CLUSTERS) as Cluster[];
+const VERTICAL_IDS = Object.keys(VERTICALS) as Vertical[];
+
 /**
- * Sticky filter bar above the repo grid. Search + four selects.
- * All filters compose (AND).
+ * Sticky filter bar: search + language/freshness selects + category CHIP rows
+ * for platforms and verticals. All filters compose (AND). Clicking an active
+ * chip clears it back to "all".
  */
 export function Filters({ state, onChange, languages, filteredCount, totalCount }: Props) {
   function patch(p: Partial<FilterState>) {
@@ -41,29 +45,13 @@ export function Filters({ state, onChange, languages, filteredCount, totalCount 
           <input
             type="search"
             value={state.query}
-            placeholder="search repos by name, description, topic…"
+            placeholder="search repos by name, description, topic..."
             onChange={(e) => patch({ query: e.target.value })}
             onKeyDown={(e) => {
               if (e.key === "Escape") patch({ query: "" });
             }}
           />
         </div>
-        <select value={state.cluster} onChange={(e) => patch({ cluster: e.target.value as FilterState["cluster"] })}>
-          <option value="all">all platforms</option>
-          {(Object.keys(CLUSTERS) as Cluster[]).map((c) => (
-            <option key={c} value={c}>
-              {CLUSTERS[c].label}
-            </option>
-          ))}
-        </select>
-        <select value={state.vertical} onChange={(e) => patch({ vertical: e.target.value as FilterState["vertical"] })}>
-          <option value="all">all verticals</option>
-          {(Object.keys(VERTICALS) as Vertical[]).map((v) => (
-            <option key={v} value={v}>
-              {VERTICALS[v].label}
-            </option>
-          ))}
-        </select>
         <select value={state.language} onChange={(e) => patch({ language: e.target.value })}>
           <option value="all">all languages</option>
           {languages.map((l) => (
@@ -72,10 +60,13 @@ export function Filters({ state, onChange, languages, filteredCount, totalCount 
             </option>
           ))}
         </select>
-        <select value={state.freshness} onChange={(e) => patch({ freshness: e.target.value as FilterState["freshness"] })}>
+        <select
+          value={state.freshness}
+          onChange={(e) => patch({ freshness: e.target.value as FilterState["freshness"] })}
+        >
           <option value="all">any freshness</option>
-          <option value="active">pushed ≤ 7d</option>
-          <option value="live">pushed ≤ 24h</option>
+          <option value="active">{"pushed <= 7d"}</option>
+          <option value="live">{"pushed <= 24h"}</option>
         </select>
         {active && (
           <button
@@ -89,6 +80,57 @@ export function Filters({ state, onChange, languages, filteredCount, totalCount 
           </button>
         )}
       </div>
+
+      <div className="filters-chip-group">
+        <div className="filters-chip-group-label">Platforms</div>
+        <div className="filters-chip-row">
+          <button
+            type="button"
+            className="filters-chip"
+            aria-pressed={state.cluster === "all"}
+            onClick={() => patch({ cluster: "all" })}
+          >
+            all
+          </button>
+          {CLUSTER_IDS.map((c) => (
+            <button
+              key={c}
+              type="button"
+              className="filters-chip"
+              aria-pressed={state.cluster === c}
+              onClick={() => patch({ cluster: state.cluster === c ? "all" : c })}
+            >
+              {CLUSTERS[c].label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="filters-chip-group">
+        <div className="filters-chip-group-label">Verticals</div>
+        <div className="filters-chip-row">
+          <button
+            type="button"
+            className="filters-chip"
+            aria-pressed={state.vertical === "all"}
+            onClick={() => patch({ vertical: "all" })}
+          >
+            all
+          </button>
+          {VERTICAL_IDS.map((v) => (
+            <button
+              key={v}
+              type="button"
+              className="filters-chip"
+              aria-pressed={state.vertical === v}
+              onClick={() => patch({ vertical: state.vertical === v ? "all" : v })}
+            >
+              {VERTICALS[v].label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="filters-summary">
         showing <strong>{filteredCount}</strong> of {totalCount} repos
       </div>

@@ -4,6 +4,8 @@ import type { PortfolioOverview } from "../lib/aggregate";
 
 interface Props {
   overview: PortfolioOverview;
+  /** Raw count of all tracked public repos (pre-substance-bar), for transparency. */
+  tracked: number;
   generatedAt: string;
   user: string;
   liveRefreshed: boolean;
@@ -13,7 +15,7 @@ interface Props {
  * Hero band — portfolio-wide stats at a glance. Big numbers, serif italic
  * accents, glassmorphic stat cards. Sets the tone for the whole page.
  */
-export function Hero({ overview, generatedAt, user, liveRefreshed }: Props) {
+export function Hero({ overview, tracked, generatedAt, user, liveRefreshed }: Props) {
   return (
     <section className="hero">
       <div className="hero-inner">
@@ -32,11 +34,15 @@ export function Hero({ overview, generatedAt, user, liveRefreshed }: Props) {
           <h1>
             One engineer.
             <br />
-            <em>{overview.total}</em> public repos.
+            <em data-cleaned-count={overview.total}>{overview.total}</em> substantive repos.
             <br />
             <em>{overview.languages}</em> languages.
             <em className="hero-accent">{overview.cluster_count}</em> named platforms.
           </h1>
+          <p className="hero-tracked">
+            {tracked.toLocaleString()} public repos tracked / {overview.total.toLocaleString()} substantive
+            (forks, archived and stubs filtered out)
+          </p>
           <p className="hero-lede">
             A live map of every public project at{" "}
             <a href={`https://github.com/${user}`} target="_blank" rel="noreferrer">
@@ -71,7 +77,7 @@ export function Hero({ overview, generatedAt, user, liveRefreshed }: Props) {
 
         <div className="hero-stats">
           {[
-            { label: "Total repos", value: overview.total },
+            { label: "Substantive", value: overview.total },
             { label: "Languages", value: overview.languages },
             { label: "Pushed in 24h", value: overview.recent_24h, tone: "tone-ok" },
             { label: "Pushed in 7d", value: overview.recent_7d, tone: "tone-ok" },
