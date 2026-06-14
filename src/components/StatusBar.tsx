@@ -14,7 +14,7 @@ export function StatusBar({ total, generatedAt, liveRefreshed }: Props) {
         <span className="status-sep">·</span>
         <span>snapshot: {shortDate(generatedAt)}</span>
         <span className="status-sep">·</span>
-        <span>repos: {total.toLocaleString()}</span>
+        <span>tracked: {total.toLocaleString()}</span>
       </div>
       <div className="status-bar-right">
         <a href="https://github.com/mizcausevic-dev/" target="_blank" rel="noreferrer">

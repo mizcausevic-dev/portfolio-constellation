@@ -1,13 +1,21 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App";
 import "./styles.css";
+import "./styles.command-center.css";
 
 const root = document.getElementById("root");
 if (!root) throw new Error("root element not found");
 
-createRoot(root).render(
+const tree = (
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );
+
+// Prerendered HTML present -> hydrate; empty (dev) -> client render.
+if (root.hasChildNodes()) {
+  hydrateRoot(root, tree);
+} else {
+  createRoot(root).render(tree);
+}

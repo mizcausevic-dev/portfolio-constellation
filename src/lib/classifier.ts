@@ -34,7 +34,31 @@ const KG_SUITE_SPECS: ReadonlySet<string> = new Set([
   "clinical-ai-disclosure-spec",
   "ai-incident-card-spec",
   "ai-procurement-decision-spec",
+  // 2026-06 governance + attestation specs (schema-backed)
+  "core-governance-spec",
+  "cloud-identity-spec",
+  "attestation-spec",
+  "trust-boundary-spec",
 ]);
+
+/* --------------------------------------------------------------------------
+ * Featured tier — the 4 schema-backed governance specs + the PUBLIC repos
+ * backing the kineticgain verifiable-live surface. Every entry is a public
+ * repo; the apex repo is private and is deliberately NOT listed here.
+ * ------------------------------------------------------------------------ */
+const FEATURED: ReadonlySet<string> = new Set([
+  "core-governance-spec",
+  "cloud-identity-spec",
+  "attestation-spec",
+  "trust-boundary-spec",
+  "audit-stream-py",
+  "kg-token-validator",
+  "kinetic-gain-embedded",
+]);
+
+export function isFeatured(repo: Repo): boolean {
+  return FEATURED.has(repo.name);
+}
 
 const KG_IMPLEMENTATION: ReadonlySet<string> = new Set([
   "procurement-decision-api",
