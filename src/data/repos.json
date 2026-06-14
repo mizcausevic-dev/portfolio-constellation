@@ -1,8 +1,31 @@
 {
   "user": "mizcausevic-dev",
-  "generated_at": "2026-06-14T01:24:58.145Z",
+  "generated_at": "2026-06-14T07:51:32.132Z",
   "total": 725,
   "repos": [
+    {
+      "name": "portfolio-constellation",
+      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
+      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
+      "language": "TypeScript",
+      "topics": [
+        "data-viz",
+        "kinetic-gain",
+        "portfolio",
+        "react",
+        "recharts",
+        "typescript"
+      ],
+      "pushed_at": "2026-06-14T01:24:59Z",
+      "updated_at": "2026-06-14T01:25:02Z",
+      "created_at": "2026-05-15T21:46:21Z",
+      "stars": 0,
+      "forks": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": "https://portfolio.kineticgain.com/",
+      "license": "NOASSERTION"
+    },
     {
       "name": "trust-boundary-spec",
       "description": "Kinetic Gain — Trust Boundary Declaration spec (JSON Schema 2020-12). Read-only by default; writes are named, audited grants; live requires a fetchable attestation.",
@@ -29,29 +52,6 @@
       "fork": false,
       "homepage": null,
       "license": null
-    },
-    {
-      "name": "portfolio-constellation",
-      "description": "Live visual atlas of every public repo at github.com/mizcausevic-dev — 190+ repos across 20+ languages, classified into named platforms and industry verticals. Auto-refreshed every 6 hours via gh api. Deploys to portfolio.kineticgain.com.",
-      "url": "https://github.com/mizcausevic-dev/portfolio-constellation",
-      "language": "TypeScript",
-      "topics": [
-        "data-viz",
-        "kinetic-gain",
-        "portfolio",
-        "react",
-        "recharts",
-        "typescript"
-      ],
-      "pushed_at": "2026-06-13T18:41:28Z",
-      "updated_at": "2026-06-13T18:41:32Z",
-      "created_at": "2026-05-15T21:46:21Z",
-      "stars": 0,
-      "forks": 0,
-      "archived": false,
-      "fork": false,
-      "homepage": "https://portfolio.kineticgain.com/",
-      "license": "NOASSERTION"
     },
     {
       "name": "lease-obligation-risk-board",
