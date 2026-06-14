@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "deploy": "bash scripts/deploy.sh",
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist/.ssr && node scripts/prerender.mjs && node scripts/verify-build.mjs",
     "prerender": "node scripts/prerender.mjs",
     "verify:build": "node scripts/verify-build.mjs",

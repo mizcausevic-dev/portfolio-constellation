@@ -1,19 +1,15 @@
 name: Refresh portfolio snapshot
 
-# Re-runs the gh-api scrape every 6 hours so the deployed dashboard reflects
-# new pushes (Codex, Claude, manual commits) without anyone editing data
-# files. Commits the new repos.json AND redeploys the live site on change.
+# Manual snapshot refresh (commit-only). Re-runs the gh-api scrape and commits
+# the updated src/data/repos.json so the repo records the snapshot.
 #
-# Why deploy here instead of relying on the separate "Deploy to Hostinger"
-# workflow: repos.json is bundled at BUILD time, and the snapshot commit
-# below is made with GITHUB_TOKEN — which by design cannot trigger another
-# workflow. So a snapshot-only commit would never reach the live site. We
-# build + FTP in this same job, gated on an actual change.
+# workflow_dispatch-ONLY by design (mirrors apex deploy.yml): a cron committing
+# a generated file to main is an out-of-band writer that collides with open PRs,
+# so the timer is removed and this is a manual button instead. Deploy is the
+# escape-hatch's job now (scripts/deploy.sh, npm run deploy) -- the old
+# in-workflow FTP deploy was 530-broken (bad creds) and is gone.
 
 on:
-  schedule:
-    # Every 6 hours at minute 7 (off-the-hour to spread load).
-    - cron: "7 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,7 +17,7 @@ permissions:
 
 jobs:
   refresh:
-    name: refresh src/data/repos.json + redeploy on change
+    name: refresh src/data/repos.json (manual, commit-only)
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
@@ -40,71 +36,13 @@ jobs:
         run: node scripts/refresh-snapshot.mjs
 
       - name: Commit if changed
-        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git diff --quiet -- src/data/repos.json; then
             echo "no snapshot changes"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git add src/data/repos.json
             git commit -m "chore(snapshot): refresh from gh api"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      # ── Redeploy the live site only when the snapshot actually changed ──
-      - name: Install
-        if: steps.commit.outputs.changed == 'true'
-        run: npm ci
-
-      - name: Build
-        if: steps.commit.outputs.changed == 'true'
-        run: npm run build
-
-      - name: Verify build output
-        if: steps.commit.outputs.changed == 'true'
-        run: |
-          test -f dist/index.html || (echo "FAIL: dist/index.html missing" && exit 1)
-          grep -q "Portfolio Constellation" dist/index.html || \
-            (echo "FAIL: dist/index.html missing brand string" && exit 1)
-          echo "OK: build verified"
-
-      - name: FTP-Deploy dist/ to /portfolio/ (first attempt)
-        id: deploy
-        if: steps.commit.outputs.changed == 'true'
-        timeout-minutes: 5
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        continue-on-error: true
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          protocol: ftps
-          port: 21
-          timeout: 60000
-          local-dir: ./dist/
-          server-dir: /portfolio/
-          dangerous-clean-slate: false
-          log-level: standard
-          exclude: |
-            **/.DS_Store
-
-      - name: Retry FTP-Deploy if first attempt failed
-        if: steps.commit.outputs.changed == 'true' && steps.deploy.outcome == 'failure'
-        timeout-minutes: 5
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          protocol: ftps
-          port: 21
-          timeout: 90000
-          local-dir: ./dist/
-          server-dir: /portfolio/
-          dangerous-clean-slate: false
-          log-level: verbose
-          exclude: |
-            **/.DS_Store
