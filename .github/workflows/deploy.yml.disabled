@@ -1,3 +1,12 @@
+# DISABLED 2026-07-11: superseded by kineticgain-com-apex's consolidated
+# deploy.yml, which now checks out mizcausevic-dev/portfolio-command-center
+# and deploys it to this exact same target (portfolio.kineticgain.com) —
+# confirmed via apex's deploy.yml (checkout step + upload path both match).
+# This repo's own copy has been failing since 2026-06-14 with "FTPError: 530
+# Login incorrect" against a deploy path apex already owns; fixing the stale
+# credential here would just create two writers racing the same subdomain.
+# Re-enable (rename back to deploy.yml) only if portfolio-constellation
+# becomes the source of truth for portfolio.kineticgain.com again.
 name: Deploy to Hostinger
 
 on:
