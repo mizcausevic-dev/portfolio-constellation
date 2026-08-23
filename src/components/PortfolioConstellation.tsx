@@ -22,13 +22,16 @@ interface Props {
 }
 
 const HUB_R = 300;
-const LEAF_R = 400;
+const LEAF_R = 420;
 const ARC_R = 460;
 const CENTER_R = 50;
 /** Real repos shown as leaves per hub before folding the rest into "+N more".
- * Caps the canvas at roughly (hubs x 5) nodes so ~11-14 real named platforms
- * stay legible on one SVG; the full list is never dropped, only the map. */
-const LEAF_CAP = 4;
+ * Caps the canvas at roughly (hubs x 4) nodes so ~11-14 real named platforms
+ * stay legible on one SVG; the full list is never dropped, only the map.
+ * Matches kg-suite-web's suite-constellation.js reference density (3 leaves
+ * per hub) — the earlier cap of 4 left too little angular room between
+ * neighboring hubs' label clusters at N=9+ hubs and their text overlapped. */
+const LEAF_CAP = 3;
 
 interface DossierField {
   label: string;
@@ -183,12 +186,15 @@ export function PortfolioConstellation({ clusters, totalRepos, onSelect }: Props
 
             const spokeStart = polar(CX, CY, CENTER_R, angle);
             const hubR = hubRadius(c.repos.length);
-            const lblPos = polar(CX, CY, HUB_R + hubR + 24, angle);
+            const lblPos = polar(CX, CY, HUB_R + hubR + 12, angle);
             const hubAnchor = textAnchor(lblPos.x);
 
             const { shown, more } = splitLeaves(c.repos, LEAF_CAP);
             const leafSlots = shown.length + (more > 0 ? 1 : 0);
-            const fan = Math.min((360 / N) * 0.85, 60);
+            // Tight cap (same order as kg-suite-web's suite-constellation.js) so a
+            // hub's leaf fan never encroaches on its neighbors' label space —
+            // the prior 0.85-of-slot fan left near-zero gap between hubs.
+            const fan = Math.min(16, (360 / N) * 0.55);
             const angles = fanAngles(angle, leafSlots, fan);
 
             return (
@@ -206,7 +212,11 @@ export function PortfolioConstellation({ clusters, totalRepos, onSelect }: Props
                 {shown.map((r, j) => {
                   const leafAngle = angles[j];
                   const leafPos = polar(CX, CY, LEAF_R, leafAngle);
-                  const lp = polar(CX, CY, LEAF_R + 13, leafAngle);
+                  // Step the label's radius (not the node's) by slot index so no two
+                  // leaves in a tight fan ever print on the same band — worst near the
+                  // top/bottom of the circle, where a fan's angular spread is nearly all
+                  // horizontal and same-radius labels sit side by side with no gap.
+                  const lp = polar(CX, CY, LEAF_R + 13 + j * 9, leafAngle);
                   const leafAnchor = textAnchor(lp.x);
                   const f = freshness(r);
                   return (
@@ -244,7 +254,7 @@ export function PortfolioConstellation({ clusters, totalRepos, onSelect }: Props
                         fill="var(--slate-400)"
                         textAnchor={leafAnchor}
                       >
-                        {truncate(r.name, 20)}
+                        {truncate(r.name, 16)}
                       </text>
                     </g>
                   );
@@ -254,7 +264,7 @@ export function PortfolioConstellation({ clusters, totalRepos, onSelect }: Props
                   (() => {
                     const leafAngle = angles[shown.length];
                     const leafPos = polar(CX, CY, LEAF_R, leafAngle);
-                    const lp = polar(CX, CY, LEAF_R + 13, leafAngle);
+                    const lp = polar(CX, CY, LEAF_R + 13 + shown.length * 9, leafAngle);
                     const leafAnchor = textAnchor(lp.x);
                     return (
                       <g key="more">
@@ -331,7 +341,7 @@ export function PortfolioConstellation({ clusters, totalRepos, onSelect }: Props
                   <circle cx={hubPos.x} cy={hubPos.y} r={3.2} fill={col} />
                 </g>
                 <text className="lbl-hub" x={lblPos.x} y={lblPos.y} fill={col} textAnchor={hubAnchor}>
-                  {truncate(c.label.toUpperCase(), 26)} &middot; {c.repos.length}
+                  {c.code} &middot; {c.repos.length}
                 </text>
               </g>
             );

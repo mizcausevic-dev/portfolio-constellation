@@ -34,7 +34,7 @@
 .constellation-stage {
   position: relative;
   margin: 0.5rem auto 0;
-  max-width: 680px;
+  max-width: 920px;
 }
 .constellation-stage svg { display: block; width: 100%; height: auto; }
 .constellation-sweep {
@@ -78,9 +78,9 @@
   font-family: var(--font-mono);
   font-weight: 700;
   letter-spacing: 0.03em;
-  font-size: 10px;
+  font-size: 11px;
 }
-.constellation .lbl-leaf { font-family: var(--font-mono); font-size: 7.4px; }
+.constellation .lbl-leaf { font-family: var(--font-mono); font-size: 8px; }
 .constellation .lbl-more { font-weight: 600; }
 
 .constellation .hoverable { cursor: pointer; }
