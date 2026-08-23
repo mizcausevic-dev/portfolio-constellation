@@ -69,6 +69,8 @@ export interface ClusterMeta {
   blurb: string;
   /** Hex accent for cards / chips. */
   accent: string;
+  /** Short radial-diagram hub label (~11 chars) — full `label` shows in the pill bar, card grid, and dossier. */
+  code: string;
 }
 
 export interface VerticalMeta {
@@ -83,6 +85,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Eleven open JSON specs for the answer-engine and agent era. Spec text + JSON Schema + canonical examples per repo.",
     accent: "#10b981",
+    code: "KG SUITE",
   },
   "kg-implementation": {
     id: "kg-implementation",
@@ -90,6 +93,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Software that consumes the Suite specs: drafters, validators, policy engines, registries, attestation, audit-stream, MCP servers.",
     accent: "#34d399",
+    code: "KG IMPL",
   },
   "aeo-stack": {
     id: "aeo-stack",
@@ -97,6 +101,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Five-layer reference implementation for the AEO Protocol: SDKs across five languages, a CLI, a BFS crawler, an always-on validator service, and an HTTP graph-query service.",
     accent: "#22d3ee",
+    code: "AEO STACK",
   },
   "agent-ops": {
     id: "agent-ops",
@@ -104,6 +109,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Production primitives for AI agent fleets: routing, eval gates, canary rollout, governance-as-code, observability, identity, redaction.",
     accent: "#818cf8",
+    code: "AGENT OPS",
   },
   "platform-reliability": {
     id: "platform-reliability",
@@ -111,6 +117,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Async reliability primitives + SRE math: rate limiter, circuit breaker, retry, bulkhead, SLO + error-budget tracker, request shadowing.",
     accent: "#fbbf24",
+    code: "RELIABILITY",
   },
   "decision-intelligence": {
     id: "decision-intelligence",
@@ -118,6 +125,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Buyer-side governance: Decision Cards → PolicyBundles → live request enforcement → contract ownership → incident remediation graphs.",
     accent: "#f472b6",
+    code: "DECISIONS",
   },
   "industry-telemetry": {
     id: "industry-telemetry",
@@ -125,6 +133,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Industry telemetry — a quarterly, ed25519-signed measurement product. Crawls a 1,400+ domain universe across 38 verticals to score AI-procurement disclosure depth and publishes the deltas as public Issues.",
     accent: "#14b8a6",
+    code: "PULSE",
   },
   "healthtech-stack": {
     id: "healthtech-stack",
@@ -132,6 +141,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Clinical + GxP-territory depth: FDA SaMD, HIPAA-readiness, FHIR access audits, CAPA + batch deviation, specimen chain-of-custody, trial-protocol drift, and adverse-event incident cards.",
     accent: "#84cc16",
+    code: "HEALTHTECH",
   },
   "growth-ops": {
     id: "growth-ops",
@@ -139,6 +149,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Marketing, consent, and attribution governance at growth.kineticgain.com: Klaviyo consent audits, VWO experiment governance, martech evidence stacks, tokenized PII bridges, UTM attribution, and identity-lifecycle workbenches.",
     accent: "#f97316",
+    code: "GROWTH OPS",
   },
   "sales-enablement": {
     id: "sales-enablement",
@@ -146,6 +157,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Buyer-diligence-response surfaces — the seller-side counterpart to the buyer-trust tooling at /trust/. Vendor proof-gap monitoring, trust-center evidence rooms, security-questionnaire answer studios, RFP response assembly. Readiness/posture framed, never certified.",
     accent: "#ec4899",
+    code: "SALES",
   },
   "executive-intelligence": {
     id: "executive-intelligence",
@@ -153,6 +165,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Board-prep + investor-facing operator surfaces — Boardroom Sparring Partner (Q&A rehearsal), Category Thesis Builder (investor narrative), Exit Room (diligence gaps), Brand Governance Styleguide (CSS-first brand approvals), Release Readiness Shell Kit (launch + freeze posture). Survivors of the exec-family expansion triage; 4 overlapping siblings were archived.",
     accent: "#a3e635",
+    code: "EXEC INTEL",
   },
   "mcp-family": {
     id: "mcp-family",
@@ -160,6 +173,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Model Context Protocol servers exposing portfolio capabilities as Claude-callable tools. One config entry per server.",
     accent: "#a78bfa",
+    code: "MCP",
   },
   landing: {
     id: "landing",
@@ -167,6 +181,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Per-spec landing pages, gallery / directory / hub sites — the public face of the suite at *.kineticgain.com.",
     accent: "#fb7185",
+    code: "LANDING",
   },
   "frontend-showcase": {
     id: "frontend-showcase",
@@ -174,6 +189,7 @@ export const CLUSTERS: Record<Cluster, ClusterMeta> = {
     blurb:
       "Standalone React / Vue / TypeScript apps demonstrating dashboards, control rooms, command centers, and operator surfaces.",
     accent: "#60a5fa",
+    code: "SHOWCASE",
   },
 };
 

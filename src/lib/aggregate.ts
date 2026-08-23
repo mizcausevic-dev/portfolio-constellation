@@ -26,6 +26,7 @@ export interface ClusterStat {
   label: string;
   blurb: string;
   accent: string;
+  code: string;
   repos: Repo[];
 }
 
@@ -48,6 +49,7 @@ export function clusterStats(repos: readonly Repo[]): ClusterStat[] {
       label: meta.label,
       blurb: meta.blurb,
       accent: meta.accent,
+      code: meta.code,
       repos: [...repos].sort((a, b) => (a.pushed_at < b.pushed_at ? 1 : -1)),
     });
   }

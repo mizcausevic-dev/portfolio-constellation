@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { IndustryAtlas } from "./components/IndustryAtlas";
 import { JsonLd } from "./components/JsonLd";
 import { LanguageAtlas } from "./components/LanguageAtlas";
+import { PortfolioConstellation } from "./components/PortfolioConstellation";
 import { RepoGrid } from "./components/RepoGrid";
 import { StatusBar } from "./components/StatusBar";
 import type { FilterState } from "./components/Filters";
@@ -76,6 +77,12 @@ export default function App() {
 
       <main className="page">
         <FeaturedTier repos={featured} />
+
+        <PortfolioConstellation
+          clusters={clusters}
+          totalRepos={ov.total}
+          onSelect={(cluster) => setFilters({ ...INITIAL_FILTERS, cluster })}
+        />
 
         <ClusterShowcase
           clusters={clusters}
