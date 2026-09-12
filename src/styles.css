@@ -43,7 +43,6 @@
 
   --font-sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --font-serif: "Playfair Display", Georgia, serif;
 
   --radius: 16px;
   --radius-sm: 8px;
@@ -149,8 +148,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
 .hero-eyebrow-sep { color: rgba(255,255,255,0.3); }
 
 .hero-headline h1 {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: clamp(2rem, 4vw, 3.4rem);
   letter-spacing: -0.02em;
@@ -159,7 +157,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
   margin: 0 0 1.4rem;
 }
 .hero-headline em {
-  font-style: italic;
+  font-style: normal;
   color: var(--emerald-400);
   text-shadow: 0 0 32px rgba(52, 211, 153, 0.4);
 }
@@ -220,8 +218,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
 .hero-stat:hover { background: var(--glass-strong); transform: translateY(-2px); }
 .hero-stat-value {
   display: block;
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: 1.9rem;
   color: #fff;
@@ -245,8 +242,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
 
 .section-head { margin-bottom: 1.6rem; max-width: 760px; }
 .section-head h2 {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 800;
   font-size: clamp(1.4rem, 2.2vw, 1.9rem);
   letter-spacing: -0.01em;
@@ -294,8 +290,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
   gap: 0.6rem;
 }
 .cluster-card-head h3 {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 700;
   font-size: 1.1rem;
   margin: 0;
@@ -399,8 +394,7 @@ code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(255,25
   gap: 1rem;
 }
 .atlas-head h2 {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-sans);
   font-weight: 700;
   font-size: 1.3rem;
   margin: 0 0 0.3rem;
