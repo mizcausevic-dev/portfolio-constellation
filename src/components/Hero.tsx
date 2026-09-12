@@ -12,8 +12,8 @@ interface Props {
 }
 
 /**
- * Hero band — portfolio-wide stats at a glance. Big numbers, serif italic
- * accents, glassmorphic stat cards. Sets the tone for the whole page.
+ * Hero band — portfolio-wide stats at a glance. Big sans-serif numbers,
+ * glassmorphic stat cards. Sets the tone for the whole page.
  */
 export function Hero({ overview, tracked, generatedAt, user, liveRefreshed }: Props) {
   return (
